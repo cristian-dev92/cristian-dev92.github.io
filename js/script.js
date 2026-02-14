@@ -12,9 +12,9 @@ const translations = {
     headerRole: "Desarrollador Fullstack",
     
     aboutTitle: "Sobre mí",
-    aboutText: `Soy técnico superior en desarrollo de aplicaciones web, actualmente me desempeño como desarrollador fullstack con experiencia práctica en Java, Spring Boot, Angular y base de datos.<br><p> 
-    Me enfoco en crear aplicaciones completas, funcionales y bien estructuradas. <br><p>
-    Cada proyecto supone un reto que impulsa mi crecimiento personal y profesional. <br><p>
+    aboutText: `Soy técnico superior en desarrollo de aplicaciones web, actualmente me desempeño como desarrollador fullstack con experiencia práctica en Java, Spring Boot, Angular y base de datos.<br><br>
+    Me enfoco en crear aplicaciones completas, funcionales y bien estructuradas. <br><br>
+    Cada proyecto supone un reto que impulsa mi crecimiento personal y profesional. <br><br>
     Destaco por mi capacidad de aprendizaje rápido, constancia, trabajo en equipo y enfoque profesional en resolución de problemas.`, 
     
     projectsTitle: "Mis proyectos", 
@@ -34,9 +34,9 @@ const translations = {
     headerRole: "Fullstack Developer", 
        
     aboutTitle: "About me",
-    aboutText: `I am a certified web application developer and currently work as a full-stack developer with hands-on experience in Java, Spring Boot, Angular, and databases.<br><p>
-    I focus on creating complete, functional, and well-structured applications.<br><p>
-    Each project presents a challenge that fosters my personal and professional growth.<br><p>
+    aboutText: `I am a certified web application developer and currently work as a full-stack developer with hands-on experience in Java, Spring Boot, Angular, and databases.<br><br>
+    I focus on creating complete, functional, and well-structured applications.<br><br>
+    Each project presents a challenge that fosters my personal and professional growth.<br><br>
     I excel at rapid learning, perseverance, teamwork, and a professional approach to problem-solving.`, 
        
     projectsTitle: "My projects",

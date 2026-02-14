@@ -42,22 +42,26 @@ body {
 nav {
   position: fixed; 
   top: 0; 
+  left: 0;
+  width: 100%;
   right: 0; 
   padding: 1rem 2rem; 
-  z-index: 1000; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+  background: var(--negro);
+  z-index: 2000; 
 } 
 
-nav a { 
-  margin-left: 1.5rem; 
-  color: var(--blanco); 
-  text-decoration: none; 
-  font-weight: 500; 
-  transition: 0.3s; 
-} 
+.nav-links a { 
+  margin-left: 1.2rem;
+}
 
-nav a:hover { 
-  color: var(--morado); 
-} 
+/* Contenedor de botones */ 
+
+.nav-buttons button {
+  margin-left: 0.5rem;
+  }
 
  /* Botón modo oscuro/claro */ 
 #themeToggle {
@@ -130,7 +134,7 @@ header {
   white-space: nowrap; 
   overflow: hidden; 
   width: 0; 
-  animation: typing2 2s steps(20) forwards 2s, blink 0.7s infinite; 
+  animation: typing2 2s steps(18) forwards 2s, blink 0.7s infinite; 
   margin: 0;
   padding: 0;
 }
@@ -142,7 +146,7 @@ header {
 
 @keyframes typing2 { 
   from { width: 0ch; }
-  to { width: 20ch; } 
+  to { width: 18ch; } 
 }
 
 @keyframes blink {
@@ -321,28 +325,21 @@ footer a:hover {
 @media (max-width: 768px) { 
   
   nav { 
-    position: fixed; 
-    top: 0; 
-    left: 0; 
-    width: 100%; 
     padding: 0.8rem 1rem; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background: var(--negro); 
-    z-index: 2000; 
   } 
   
-  nav a { font-size: 0.9rem; 
-         margin-left: 0.8rem; 
-  } 
+   .nav-links a { 
+     font-size: 0.9rem; 
+     margin-left: 0.6rem;
+   }
   
   /* Contenedor para los botones */ 
-  nav button {
-    margin-left: 0.5rem; 
+  
+  .nav-buttons button { 
     padding: 5px 8px; 
     font-size: 0.8rem; 
   } 
+  
   /* Evitar que el header suba debajo del nav */
   header { margin-top: 70px; 
   }

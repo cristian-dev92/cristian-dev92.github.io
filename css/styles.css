@@ -38,7 +38,8 @@ body {
   scroll-behavior: smooth;
 } 
 
-/* ------------------ NAVBAR ------------------ */ nav {
+/* ------------------ NAVBAR ------------------ */ 
+nav {
   position: fixed; 
   top: 0; 
   right: 0; 
@@ -116,7 +117,7 @@ header {
   white-space: nowrap; 
   overflow: hidden; 
   width: 0; 
-  animation: typing 2s steps(17) forwards 2s, blink 0.7s infinite; 
+  animation: typing 2s steps(16) forwards 2s, blink 0.7s infinite; 
   margin: 0;
   padding: 0;
 }
@@ -136,7 +137,7 @@ header {
 
 @keyframes typing { 
   from { width: 0ch; }
-  to { width: 17ch; } 
+  to { width: 16ch; } 
 }
 
 @keyframes typing2 { 
@@ -314,4 +315,35 @@ footer a:hover {
 
 .card a:hover { 
   color: var(--morado);
+}
+
+/* ------------------ NAV RESPONSIVE ------------------ */ 
+@media (max-width: 768px) { 
+  
+  nav { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    padding: 0.8rem 1rem; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background: var(--negro); 
+    z-index: 2000; 
+  } 
+  
+  nav a { font-size: 0.9rem; 
+         margin-left: 0.8rem; 
+  } 
+  
+  /* Contenedor para los botones */ 
+  nav button {
+    margin-left: 0.5rem; 
+    padding: 5px 8px; 
+    font-size: 0.8rem; 
+  } 
+  /* Evitar que el header suba debajo del nav */
+  header { margin-top: 70px; 
+  }
 }

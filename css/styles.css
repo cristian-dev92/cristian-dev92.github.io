@@ -136,7 +136,7 @@ header {
 
 @keyframes typing { 
   from { width: 0ch; }
-  to { width: 17ch; } 
+  to { width: 16ch; } 
 }
 
 @keyframes typing2 { 
@@ -179,7 +179,7 @@ section {
   position: relative; 
   overflow: hidden; 
   border-radius: 10px; 
-  height: 500px;
+  height: 400px;
 } 
 
 .carousel img { 

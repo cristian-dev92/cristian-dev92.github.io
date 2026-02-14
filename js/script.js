@@ -12,7 +12,10 @@ const translations = {
     headerRole: "Desarrollador Fullstack",
     
     aboutTitle: "Sobre mí",
-    aboutText: `Soy técnico superior en desarrollo de aplicaciones web, actualmente me desempeño como desarrollador fullstack con experiencia práctica en Java, Spring Boot, Angular y base de datos. Me enfoco en crear aplicaciones completas, funcionales y bien estructuradas. Cada proyecto supone un reto que impulsa mi crecimiento personal y profesional. Destaco por mi capacidad de aprendizaje rápido, constancia, trabajo en equipo y enfoque profesional en resolución de problemas.`, 
+    aboutText: `Soy técnico superior en desarrollo de aplicaciones web, actualmente me desempeño como desarrollador fullstack con experiencia práctica en Java, Spring Boot, Angular y base de datos.<br><p> 
+    Me enfoco en crear aplicaciones completas, funcionales y bien estructuradas. <br><p>
+    Cada proyecto supone un reto que impulsa mi crecimiento personal y profesional. <br><p>
+    Destaco por mi capacidad de aprendizaje rápido, constancia, trabajo en equipo y enfoque profesional en resolución de problemas.`, 
     
     projectsTitle: "Mis proyectos", 
     ecommerceTitle: "Ecommerce Fullstack",
@@ -31,7 +34,10 @@ const translations = {
     headerRole: "Fullstack Developer", 
        
     aboutTitle: "About me",
-    aboutText: `I am a certified web application developer and currently work as a full-stack developer with hands-on experience in Java, Spring Boot, Angular, and databases. I focus on creating complete, functional, and well-structured applications. Each project presents a challenge that fosters my personal and professional growth. I excel at rapid learning, perseverance, teamwork, and a professional approach to problem-solving.`, 
+    aboutText: `I am a certified web application developer and currently work as a full-stack developer with hands-on experience in Java, Spring Boot, Angular, and databases.<br><p>
+    I focus on creating complete, functional, and well-structured applications.<br><p>
+    Each project presents a challenge that fosters my personal and professional growth.<br><p>
+    I excel at rapid learning, perseverance, teamwork, and a professional approach to problem-solving.`, 
        
     projectsTitle: "My projects",
     ecommerceTitle: "Fullstack Ecommerce",
@@ -45,7 +51,7 @@ const translations = {
 function applyTranslations() { 
   document.querySelectorAll("[data-key]").forEach(el => { 
     const key = el.getAttribute("data-key"); 
-    el.textContent = translations[currentLang][key];
+    el.innerHTML = translations[currentLang][key];
   }); 
 } 
 

@@ -2,85 +2,63 @@
 <html lang="es"> 
   <head> 
     <meta charset="UTF-8" /> 
-    <title>Portfolio - Cristian Alhambra</title>
+    <title>Portfolio - Cristian Alhambra</title> 
     <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-    <style> 
-      body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #0f172a; color: #e5e7eb; } 
-      header { padding: 3rem 1rem; text-align: center; background: #111; color: white; } 
-      h1 { margin: 0; font-size: 2.5rem; color: #38bdf8; } 
-      h2 { margin-top: 3rem; text-align: center; color: #38bdf8; } 
-      section { max-width: 900px; margin: auto; padding: 1rem; } 
-      .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; } 
-      .card { background: #020617; padding: 1.5rem; border-radius: 0.75rem; margin-bottom: 1rem; border: 1px solid #1f2937; } 
-      .card img { width: 100%; border-radius: 10px; } 
-      .tech { font-size: 0.9rem; color: #666; margin-bottom: 0.5rem; } 
-      a { color: #38bdf8; text-decoration: none; }
-      footer { text-align: center; padding: 2rem; margin-top: 3rem; background: #111; color: white; }
-       .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 10px;
-        margin-top: 10px;
-      }
-
-       .gallery img {
-        width: 100%;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        transition: transform 0.2s;
-    }
-
-       .gallery img:hover {
-        transform: scale(1.05);
-    }
-    </style> 
-  </head>
-  
-  <body> 
     
-    <header> 
-      <h1>¡Hola! Soy Cristian Alhambra</h1> 
-      <h2>Desarrollador Fullstack</h2> 
+    <!-- CSS externo -->
+    <link rel="stylesheet" href="css/styles.css"> 
+  </head> 
+ 
+  <body>
+    
+    <!-- NAV --> 
+    <nav>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a> 
+    </nav> 
+    
+    <!-- HEADER --> 
+    <header>
+      <div class="typing">Cristian Alhambra</div> 
+      <h3 class="subtitulo">Desarrollador Fullstack</h3> 
     </header> 
     
-    <section> 
-      <h2>Sobre mí</h2> 
+    <!-- SOBRE MI --> 
+    <section id="sobre-mi"> 
+      <h2>Sobre mí</h2>
       <p> 
-        Soy técnico superior en desarrollo de aplicaciones web, actualmente me desempeño como desarrollador fullstack con experiencia práctica en Java, Spring Boot, Angular y base de datos.<br><p></p> 
-        Me enfoco en crear aplicaciones completas, funcionales y bien estructuradas.<br><p></p> 
-        Destaco por mi capacidad de aprendizaje rápido, constancia, trabajo en equipo y enfoque profesional en resolución de problemas.<br><p></p> 
-        Me apasiona este mundo porque es un entorno dinámico, donde siempre hay algo nuevo que aprender. Cada proyecto supone un reto que impulsa mi crecimiento personal y profesional.
+        Soy técnico superior en desarrollo de aplicaciones web, actualmente me desempeño como desarrollador fullstack con experiencia práctica en Java, Spring Boot, Angular y base de datos.<br><p>
+        Me enfoco en crear aplicaciones completas, funcionales y bien estructuradas.<br><p> 
+        Cada proyecto supone un reto que impulsa mi crecimiento personal y profesional.<br><p> 
+        Destaco por mi capacidad de aprendizaje rápido, constancia, trabajo en equipo y enfoque profesional en resolución de problemas.<br><p> 
       </p> 
-    </section> 
+    </section>
     
-    <section> 
-      <h2>Mis proyectos</h2> 
-      
+    <!-- PROYECTOS --> 
+    <section id="proyectos"> 
+      <h2>Mis proyectos</h2>
       <div class="card"> 
-        <h3>Ecommerce Fullstack</h3>
-        <p class="tech">Angular · Spring Boot · JWT · MySQL</p> 
-        <p>Tienda online completa con login, carrito, checkout y panel de pedidos.</p> 
         
-        <!-- Proyecto Ecommerce --> 
-        <div class="gallery"> 
-          <img src="assets/capturas/PaginaPrincipal.png" alt="Página Principal"> 
-          <img src="assets/capturas/Registro.png" alt="Registro"> 
-          <img src="assets/capturas/InicioSesion.png" alt="Inicio Sesión"> 
-          <img src="assets/capturas/Carrito.png" alt="Carrito"> 
-          <img src="assets/capturas/MiPerfil.png" alt="Mi perfil"> 
-          <p></p> 
-          <p> 
-            <a href="https://github.com/cristian-dev92/ecommerce-frontend" target="_blank">Frontend</a> · 
-            <a href="https://github.com/cristian-dev92/ecommerce-backend" target="_blank">Backend</a> 
-          </p> 
-        </div> 
+        <h3>Ecommerce Fullstack</h3> 
+        <p>Angular · Spring Boot · JWT · MySQL</p> 
         
-        <!-- Aquí podrás añadir más proyectos --> 
+        <div class="carousel" id="carousel1"> 
+          <img src="assets/capturas/PaginaPrincipal.png" class="active"> 
+          <img src="assets/capturas/Registro.png"> 
+          <img src="assets/capturas/InicioSesion.png"> 
+          <img src="assets/capturas/Carrito.png"> 
+          <img src="assets/capturas/MiPerfil.png"> 
+        </div>
+        <p> 
+          <a href="https://github.com/cristian-dev92/ecommerce-frontend" target="_blank">Frontend</a> · 
+          <a href="https://github.com/cristian-dev92/ecommerce-backend" target="_blank">Backend</a> 
+        </p> 
       </div> 
     </section> 
     
-    <footer> 
-      <h1>Contacto</h1> 
+    <!-- CONTACTO --> 
+    <footer id="contacto"> <h3>Contacto</h3> 
       <p> 
         <a href="https://www.linkedin.com/in/cristian-alhambra-tormos-8b4b91135" target="_blank">LinkedIn</a> · 
         <a href="https://github.com/cristian-dev92" target="_blank">GitHub</a> · 
@@ -88,5 +66,15 @@
       </p> 
     </footer> 
     
+    <!-- MODAL --> 
+    <div class="modal" id="modal"> <img id="modalImg"> 
+    </div> 
+    
+    <!-- FLECHA ARRIBA --> 
+    <div id="topBtn">↑</div> 
+    
+    <!-- JS externo --> 
+    <script src="js/script.js"></script> 
   </body> 
 </html>
+      

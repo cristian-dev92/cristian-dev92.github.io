@@ -78,7 +78,7 @@ nav a:hover {
 
 /* ------------------ HEADER ------------------ */ 
 header {
-  height: 100vh; 
+  height: 80vh; 
   display: flex; 
   flex-direction: column; 
   justify-content: center; 
@@ -96,12 +96,27 @@ header {
   white-space: nowrap; 
   overflow: hidden; 
   width: 0; 
-  animation: typing 3s steps(30) forwards, blink 0.7s infinite; 
+  animation: typing 2.5s steps(30) forwards, blink 0.7s infinite; 
+}
+
+.typing2 { 
+  font-size: 1.8rem; 
+  margin-top: 1rem; 
+  color: var(--morado); 
+  border-right: 3px solid var(--morado); 
+  white-space: nowrap; overflow: hidden; 
+  width: 0; 
+  animation: typing2 2.5s steps(30) forwards 2.6s, blink 0.7s infinite; 
 }
 
 @keyframes typing { 
   from { width: 0; }
   to { width: 350px; } 
+}
+
+@keyframes typing2 { 
+  from { width: 0; }
+  to { width: 300px; } 
 }
 
 @keyframes blink {
@@ -113,9 +128,10 @@ header {
   margin-top: 1rem; 
 } 
 
+/* ------------------ SECCIONES ------------------ */
 h2 { 
   color: var(--morado); 
-  margin-top: 3rem;
+  margin-top: 2rem;
   text-align: center; 
 } 
 
@@ -134,6 +150,11 @@ section {
   border: 1px solid #333; 
 } 
 
+.light-mode .card {
+  background: #e5e7eb;
+  border-color: #cbd5e1; 
+}
+
 .carousel { 
   position: relative; 
   overflow: hidden; 
@@ -144,16 +165,27 @@ section {
   width: 100%; 
   display: none; 
   cursor: pointer; 
-  transition: transform 0.3s; 
 } 
 
 .carousel img.active { 
   display: block; 
 } 
 
-.carousel img:hover {
-  transform: scale(1.05);
+/* Flechas del carrusel */ 
+.arrow { 
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5); 
+  color: white; 
+  padding: 10px; 
+  cursor: pointer; 
+  font-size: 22px; 
+  border-radius: 5px; 
 } 
+
+.arrow.left { left: 10px; } 
+.arrow.right { right: 10px; }
 
 /* ------------------ MODAL ------------------ */ 
 .modal { 
@@ -170,6 +202,16 @@ section {
   width: 80%; 
   max-width: 900px; 
   border-radius: 10px;
+} 
+
+/* Botón X */ 
+.closeModal { 
+  position: absolute; 
+  top: 30px; 
+  right: 40px; 
+  font-size: 35px; 
+  color: white; 
+  cursor: pointer; 
 } 
 
 /* ------------------ FLECHA ARRIBA ------------------ */ 
@@ -196,4 +238,8 @@ footer {
   padding: 2rem; 
   margin-top: 3rem; 
   background: #111;
+}
+
+.light-mode footer { 
+  background: #d1d5db; 
 }

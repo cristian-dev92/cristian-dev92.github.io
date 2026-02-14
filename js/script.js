@@ -19,7 +19,9 @@ const translations = {
     
     projectsTitle: "Mis proyectos", 
     ecommerceTitle: "Ecommerce Fullstack",
-    ecommerceDesc: `Este proyecto es una plataforma ecommerce fullstack construida con Angular y Spring Boot. Implementa un sistema de autenticación seguro mediante JWT, gestión de usuarios, catálogo dinámico de productos, carrito persistente y proceso de compra completo. Además, cuenta con un panel de administración que permite realizar un CRUD completo (crear, leer, actualizar y eliminar) de productos, categorías y pedidos, garantizando una gestión integral del negocio.`, 
+    ecommerceDesc: `Este proyecto es una plataforma ecommerce fullstack construida con Angular y Spring Boot.<br><br> 
+    Implementa un sistema de autenticación seguro mediante JWT, gestión de usuarios, catálogo dinámico de productos, carrito persistente y proceso de compra completo.<br><br> 
+    Además, cuenta con un panel de administración que permite realizar un CRUD completo (crear, leer, actualizar y eliminar) de productos, categorías y pedidos, garantizando una gestión integral del negocio.`, 
     
     closeModal: "✖",
     contactTitle: "Contacto" 
@@ -41,7 +43,9 @@ const translations = {
        
     projectsTitle: "My projects",
     ecommerceTitle: "Fullstack Ecommerce",
-    ecommerceDesc: `This project is a full-stack ecommerce platform built with Angular and Spring Boot. It implements a secure authentication system using JWT, user management, a dynamic product catalog, a persistent shopping cart, and a complete checkout process. Furthermore, it features an administration panel that allows for full CRUD (create, read, update, and delete) functionality for products, categories, and orders, ensuring comprehensive business management.`,
+    ecommerceDesc: `This project is a full-stack ecommerce platform built with Angular and Spring Boot.<br><br>
+    It implements a secure authentication system using JWT, user management, a dynamic product catalog, a persistent shopping cart, and a complete checkout process.<br><br>
+    Furthermore, it features an administration panel that allows for full CRUD (create, read, update, and delete) functionality for products, categories, and orders, ensuring comprehensive business management.`,
     
     closeModal: "✖", 
     contactTitle: "Contact" 

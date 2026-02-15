@@ -10,6 +10,9 @@ const translations = {
     menuContact: "Contacto", 
     contactMessage: "Escribe tu mensaje...",
     sendMessage: "Enviar mensaje",
+    placeholderName: "Tu nombre", 
+    placeholderEmail: "Tu email", 
+    placeholderMessage: "Escribe tu mensaje...",
     
     headerName: "¡Hola! Soy Cristian Alhambra", 
     headerRole: "Desarrollador Fullstack",
@@ -37,6 +40,9 @@ const translations = {
     menuContact: "Contact",
     contactMessage: "Write your message...",
     sendMessage: "Send message",
+    placeholderName: "Your name", 
+    placeholderEmail: "Your email", 
+    placeholderMessage: "Write your message...",
        
     headerName: "Cristian Alhambra",
     headerRole: "Fullstack Developer", 
@@ -62,6 +68,16 @@ function applyTranslations() {
   document.querySelectorAll("[data-key]").forEach(el => { 
     const key = el.getAttribute("data-key"); 
     el.innerHTML = translations[currentLang][key];
+    const translation = translations[currentLang][key];
+
+    if (!translation) return; // evita undefined 
+    
+    if (el.placeholder !== undefined) { 
+      el.placeholder = translation; 
+    } 
+    else { 
+      el.innerHTML = translation;
+    }
   }); 
 } 
 

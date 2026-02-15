@@ -28,7 +28,7 @@
     
     <!-- HEADER --> 
     <header>
-      <div class="typing" data-key="headerName">¡Hola! Soy Cristian Alhambra</div> 
+      <h1 class="typing" data-key="headerName">¡Hola! Soy Cristian Alhambra</h1> 
       <h3 class="typing2" data-key="headerRole">Desarrollador Fullstack</h3> 
     </header> 
     
@@ -65,10 +65,43 @@
         </p> 
       </div> 
     </section> 
+
+    
+    <!-- MIS HABILIDADES --> 
+    <section id="habilidades"> 
+      <h2 data-key="skillsTitle">Mis Habilidades</h2> 
+      
+      <div class="skills-container">
+        
+        <div class="skill-card"> 
+          <li><span>HTML</span><div class="bar"><div style="width: 95%"></div></div></li> 
+          <li><span>CSS</span><div class="bar"><div style="width: 90%"></div></div></li> 
+          <li><span>TypeScript</span><div class="bar"><div style="width: 85%"></div></div></li> 
+          <li><span>Angular</span><div class="bar"><div style="width: 80%"></div></div></li>
+          <li><span>Node.js</span><div class="bar"><div style="width: 80%"></div></div></li>
+          <li><span>Java</span><div class="bar"><div style="width: 70%"></div></div></li>
+          <li><span>Spring Boot</span><div class="bar"><div style="width: 75%"></div></div></li>
+          <li><span>REST API</span><div class="bar"><div style="width: 75%"></div></div></li>
+          <li><span>JWT / Seguridad</span><div class="bar"><div style="width: 75%"></div></div></li>
+          <li><span>SQL</span><div class="bar"><div style="width: 75%"></div></div></li>
+          <li><span>Docker</span><div class="bar"><div style="width: 75%"></div></div></li>
+          <li><span>Figma</span><div class="bar"><div style="width: 75%"></div></div></li>
+          <li><span>Git</span><div class="bar"><div style="width: 85%"></div></div></li>
+        </div>
+      </div>
+    </section>
     
     <!-- CONTACTO --> 
     <footer id="contacto">
       <h2 data-key="contactTitle">Contacto</h2>
+
+       <form class="contact-form" action="https://formspree.io/f/mwkggkqj" method="POST">
+         <input type="text" name="name" placeholder="Tu nombre" required> 
+         <input type="email" name="email" placeholder="Tu email" required> 
+         <textarea name="message" placeholder="Escribe tu mensaje..." required></textarea>
+         <button type="submit" data-key="sendMessage">Enviar mensaje</button> 
+       </form>
+    </section>
       <p> 
         <a href="https://www.linkedin.com/in/cristian-alhambra-tormos-8b4b91135" target="_blank">LinkedIn</a> · 
         <a href="https://github.com/cristian-dev92" target="_blank">GitHub</a> · 

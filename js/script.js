@@ -5,10 +5,12 @@ let currentLang = localStorage.getItem("lang") || "es";
 const translations = { 
   es: { 
     menuAbout: "Sobre mí", 
-    menuProjects: "Proyectos", 
+    menuProjects: "Proyectos",
+    menuskillsTitle: "Mis habilidades",
     menuContact: "Contacto", 
+    sendMessage: "Enviar mensaje",
     
-    headerName: "Cristian Alhambra", 
+    headerName: "¡Hola! Soy Cristian Alhambra", 
     headerRole: "Desarrollador Fullstack",
     
     aboutTitle: "Sobre mí",
@@ -30,7 +32,9 @@ const translations = {
   en: { 
     menuAbout: "About me",
     menuProjects: "Projects",
+    menuskillsTitle: "My Skills",
     menuContact: "Contact",
+    sendMessage: "Send message",
        
     headerName: "Cristian Alhambra",
     headerRole: "Fullstack Developer", 

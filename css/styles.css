@@ -32,6 +32,7 @@
 /* ------------------ ESTILOS GENERALES ------------------ */ 
 body { 
   margin: 0; 
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif; 
   background: var(--negro); 
   color: var(--blanco); 
@@ -42,22 +43,21 @@ body {
 nav {
   position: fixed; 
   top: 0; 
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  right: 0; 
-  padding: 0.4rem 0.8rem; 
+  max-width: 1100px;
+  padding: 0.6rem 1rem; 
   display: flex; 
   justify-content: space-between; 
-  align-items: center; 
-  max-width: 1100px;
-  margin: 0 auto;
+  align-items: center;
   background: var(--negro);
   z-index: 2000; 
+  gap: 1.5rem;
 } 
 
 .nav-links a { 
-  margin-left: 1rem;
-  font-size: 1rem;
+  font-size: 2rem;
   color: var(--blanco); 
   text-decoration: none; 
   font-weight: 500;
@@ -73,8 +73,8 @@ nav {
 
 .nav-buttons button {
   margin-left: 0;
-  padding: 2px 4px; 
-  font-size: 0.6rem; 
+  padding: 4px 8px; 
+  font-size: 1rem; 
   border: 1px solid var(--blanco);
   background: transparent; 
   color: var(--blanco); 
@@ -114,6 +114,7 @@ header {
   padding: 1rem; 
   margin-bottom: 0;
   margin-top: 70px;
+  overflow: hidden;
 } 
 
  section { padding-top: 1rem; /* reduce espacio superior */ 
@@ -127,9 +128,7 @@ header {
   border-right: 3px solid var(--azul); 
   white-space: nowrap; 
   overflow: hidden; 
-  width: 16ch; 
-  max-width: 16ch;
-  animation: typing 2s steps(28) forwards 2s, blink 0.7s infinite; 
+  animation: typing 2s steps(32, end) forwards,  blink 0.7s step-end 6,  hideCursor 0.1s forwards 3.5s;
   margin: 0;
   padding: 0;
 }
@@ -143,24 +142,28 @@ header {
   overflow: hidden; 
   width: 20ch; 
   max-width: 20ch;
-  animation: typing2 2s steps(20) forwards 2s, blink 0.7s infinite; 
+  animation: typing2 2s steps(20, end) forwards,  blink 0.7s step-end 6,  hideCursor 0.1s forwards 3.5s;
   margin: 0;
   padding: 0;
 }
 
 @keyframes typing { 
   from { width: 0ch; }
-  to { width: 28ch; } 
+  to { width: 100%; } 
 }
 
 @keyframes typing2 { 
   from { width: 0ch; }
-  to { width: 20ch; } 
+  to { width: 100%; } 
 }
 
 @keyframes blink {
   50% { border-color: transparent; } 
 } 
+
+@keyframes hideCursor {
+  to { border-right: none; }
+}
 
 /* ------------------ SECCIONES ------------------ */
 h2 { 
@@ -338,7 +341,7 @@ footer a:hover {
   } 
   
    .nav-links a { 
-     font-size: 0.8rem; 
+     font-size: 1rem; 
      margin-left: 0.5rem;
    }
   
@@ -349,8 +352,8 @@ footer a:hover {
   }
   
   .nav-buttons button { 
-    padding: 1px 3px; 
-    font-size: 0.4rem; 
+    padding: 3px 6px; 
+    font-size: 0.8rem; 
     margin-left: 0.4rem;
     border-width: 1px;
   } 
@@ -361,3 +364,18 @@ footer a:hover {
     width: 100%; 
     overflow: hidden;
 }
+
+   .typing {
+    font-size: 1.6rem;
+    white-space: normal; 
+    text-align: center;
+    border-right: none;    
+    animation: none;       
+  }
+
+  .typing2 {
+    font-size: 1.1rem;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+  }

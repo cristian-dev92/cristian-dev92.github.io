@@ -416,25 +416,28 @@ footer a:hover {
     margin-top: 2rem; 
   } 
   
-  .contact-form input, 
-  .contact-form textarea { 
+  .contact-form input ::placeholder, 
+  .contact-form textarea ::placeholder { 
     background: transparent;
     border: 2px solid #333;
     padding: 12px; 
     border-radius: 6px; 
-    color: var(--blanco); 
+    color: #aaa;
+    opacity: 1;
     font-size: 1rem; 
   } 
   
-  .light-mode .contact-form input, 
-  .light-mode .contact-form textarea { 
+  .light-mode .contact-form input ::placeholder, 
+  .light-mode .contact-form textarea ::placeholder { 
     border-color: #cbd5e1; 
-    color: #111; 
+    color: #666;
+    opacity: 1;
   } 
   
   .contact-form textarea { 
     height: 150px; 
     resize: none; 
+    background: rgba(255,255,255,0.05);
   } 
   
   .contact-form button {
@@ -475,6 +478,10 @@ footer a:hover {
   nav { 
     justify-content: center; 
   }
+
+   section {
+     padding-top: 80px;
+   }
 
   .skills-list {
     gap: 0.6rem; /* Reducimos el espacio en móvil */

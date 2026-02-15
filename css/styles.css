@@ -31,6 +31,16 @@ body {
   scroll-behavior: smooth;
 } 
 
+/* ------------------ NAVBAR LINKS ------------------ */ 
+.nav-links { 
+  display: flex; 
+  flex-direction: row; 
+  flex-wrap: wrap; 
+  gap: 1rem; 
+  justify-content: center; 
+  align-items: center; 
+}
+
 /* ------------------ NAVBAR ------------------ */ 
 nav {
   position: fixed; 
@@ -187,6 +197,13 @@ section {
   margin: auto; 
   padding: 4rem 2rem; 
 } 
+
+#sobre-mi, 
+#proyectos, 
+#habilidades, 
+#contacto { 
+  padding-top: 120px; 
+}
 
 /* ------------------ PROYECTOS ------------------ */ 
 .card { 
@@ -453,7 +470,11 @@ footer a:hover {
   }
 
  /* ------------------ NAV RESPONSIVE ------------------ */ 
- @media (max-width: 768px) { 
+ @media (max-width: 768px) {
+
+  nav { 
+    justify-content: center; 
+  }
 
   .skills-list {
     gap: 0.6rem; /* Reducimos el espacio en móvil */

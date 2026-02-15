@@ -416,8 +416,8 @@ footer a:hover {
     margin-top: 2rem; 
   } 
   
-  .contact-form input ::placeholder, 
-  .contact-form textarea ::placeholder { 
+  .contact-form input::placeholder, 
+  .contact-form textarea::placeholder { 
     background: transparent;
     border: 2px solid #333;
     padding: 12px; 
@@ -427,8 +427,8 @@ footer a:hover {
     font-size: 1rem; 
   } 
   
-  .light-mode .contact-form input ::placeholder, 
-  .light-mode .contact-form textarea ::placeholder { 
+  .light-mode .contact-form input::placeholder, 
+  .light-mode .contact-form textarea::placeholder { 
     border-color: #cbd5e1; 
     color: #666;
     opacity: 1;

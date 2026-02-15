@@ -180,3 +180,27 @@ window.addEventListener("scroll", () => {
 topBtn.addEventListener("click", () => { 
   window.scrollTo({ top: 0, behavior: "smooth" }); 
 });
+
+/* ----------- SCROLL SUAVE (Fix para el menú) ----------- */
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+
+    // Solo si el enlace es a una sección interna
+    if (href.startsWith("#")) {
+      e.preventDefault();
+      const targetId = href.substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        const navHeight = document.querySelector("nav").offsetHeight;
+        const targetPosition = targetElement.offsetTop - navHeight;
+
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth"
+        });
+      }
+    }
+  });
+});

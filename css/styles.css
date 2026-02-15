@@ -45,7 +45,7 @@ nav {
   left: 0;
   width: 100%;
   right: 0; 
-  padding: 1rem 2rem; 
+  padding: 0.8rem 1rem; 
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
@@ -54,7 +54,7 @@ nav {
 } 
 
 .nav-links a { 
-  margin-left: 1.2rem;
+  margin-left: 0.8rem;
   color: var(--blanco); 
   text-decoration: none; 
   font-weight: 500;
@@ -62,8 +62,14 @@ nav {
 
 /* Contenedor de botones */ 
 
+.nav-buttons { 
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem;
+} 
+
 .nav-buttons button {
-  margin-left: 0.5rem;
+  margin-left: 0;
   padding: 6px 10px; 
   font-size: 0.9rem; 
   border: 2px solid var(--blanco);
@@ -72,6 +78,9 @@ nav {
   border-radius: 8px; 
   cursor: pointer; 
   transition: 0.3s;
+  display: flex; 
+  align-items: center; 
+  gap: 0.5rem;
   }
 
  .nav-buttons button:hover { 
@@ -136,7 +145,7 @@ header {
   white-space: nowrap; 
   overflow: hidden; 
   width: 0; 
-  animation: typing 2s steps(16) forwards 2s, blink 0.7s infinite; 
+  animation: typing 2s steps(15) forwards 2s, blink 0.7s infinite; 
   margin: 0;
   padding: 0;
 }
@@ -149,19 +158,19 @@ header {
   white-space: nowrap; 
   overflow: hidden; 
   width: 0; 
-  animation: typing2 2s steps(18) forwards 2s, blink 0.7s infinite; 
+  animation: typing2 2s steps(20) forwards 2s, blink 0.7s infinite; 
   margin: 0;
   padding: 0;
 }
 
 @keyframes typing { 
   from { width: 0ch; }
-  to { width: 16ch; } 
+  to { width: 15ch; } 
 }
 
 @keyframes typing2 { 
   from { width: 0ch; }
-  to { width: 18ch; } 
+  to { width: 20ch; } 
 }
 
 @keyframes blink {
@@ -340,18 +349,22 @@ footer a:hover {
 @media (max-width: 768px) { 
   
   nav { 
-    padding: 0.8rem 1rem; 
+    padding: 0.6rem 0.8rem; 
   } 
   
    .nav-links a { 
-     font-size: 0.9rem; 
-     margin-left: 0.6rem;
+     font-size: 0.8rem; 
+     margin-left: 0.4rem;
    }
   
   /* Contenedor para los botones */ 
+
+  .nav-buttons { 
+    gap: 0.4rem; 
+  }
   
   .nav-buttons button { 
-    padding: 5px 8px; 
+    padding: 5px 7px; 
     font-size: 0.8rem; 
     margin-left: 0.4rem;
   } 

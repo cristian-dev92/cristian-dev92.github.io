@@ -405,7 +405,7 @@ footer a:hover {
   } 
   
   .skills-grid { 
-   display: grid; 
+    display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
     gap: 2rem; 
     margin-top: 2rem;
@@ -413,10 +413,10 @@ footer a:hover {
   
   .skill-item { 
     background: #1a1a1a; 
-    padding: 1.2rem; 
-    border-radius: 12px; 
+    padding: 1.5rem; 
+    border-radius: 16px; 
     border: 1px solid #333;
-    transition: 0.3s; 
+    transition: 0.3s ease; 
   }
   
   .light-mode .skill-item { 
@@ -425,14 +425,14 @@ footer a:hover {
   } 
 
   .skill-item:hover { 
-    transform: translateY(-5px);
+    transform: translateY(-8px);
     border-color: var(--morado);
   }
   
   .skill-item img { 
-    width: 50px; 
-    height: 50px
-    margin-bottom: 0.5rem; 
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 0.8rem; 
   } 
   
   .skill-item p { 
@@ -468,6 +468,24 @@ footer a:hover {
     padding: 2rem; 
     text-align: center; 
   } 
+  
+  .contact-links {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .contact-links a {
+    color: var(--azul);
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .contact-links a:hover {
+    color: var(--morado);
+  }
   
   .contact-form { 
     max-width: 600px; 

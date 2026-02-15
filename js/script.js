@@ -1,4 +1,4 @@
-/* ----------- IDIOMAS (ES / EN) ----------- */ 
+/* ----------- IDIOMAS (ES / EN) ----------- */
 const langBtn = document.getElementById("langToggle"); 
 let currentLang = localStorage.getItem("lang") || "es"; 
 

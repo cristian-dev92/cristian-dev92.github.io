@@ -422,22 +422,20 @@ footer a:hover {
     border: 2px solid #333;
     padding: 12px; 
     border-radius: 6px; 
-    color: #aaa;
+    color: var(--blanco);
     opacity: 1;
     font-size: 1rem; 
   } 
   
   .light-mode .contact-form input::placeholder, 
   .light-mode .contact-form textarea::placeholder { 
-    border-color: #cbd5e1; 
-    color: #666;
+    color: #aaa;
     opacity: 1;
   } 
   
   .contact-form textarea { 
     height: 150px; 
-    resize: none; 
-    background: rgba(255,255,255,0.05);
+    resize: none;
   } 
   
   .contact-form button {

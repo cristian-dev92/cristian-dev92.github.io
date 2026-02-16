@@ -415,6 +415,17 @@ footer a:hover {
     gap: 1rem;
     margin-top: 2rem; 
   } 
+
+  /* Inputs y textarea (estilo oscuro elegante) */ 
+  .contact-form input, 
+  .contact-form textarea { 
+    background: rgba(255,255,255,0.05);
+    border: 2px solid #333; 
+    padding: 12px; 
+    border-radius: 6px;
+    color: var(--blanco);
+    font-size: 1rem; 
+  }
   
   .contact-form input::placeholder, 
   .contact-form textarea::placeholder { 
@@ -429,7 +440,7 @@ footer a:hover {
   
   .light-mode .contact-form input::placeholder, 
   .light-mode .contact-form textarea::placeholder { 
-    color: #aaa;
+    color: #666;
     opacity: 1;
   } 
   

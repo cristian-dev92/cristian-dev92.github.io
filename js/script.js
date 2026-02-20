@@ -23,7 +23,7 @@ const translations = {
     Cada proyecto supone un reto que impulsa mi crecimiento personal y profesional. <br><br>
     Destaco por mi capacidad de aprendizaje rápido, constancia, trabajo en equipo y enfoque profesional en resolución de problemas.`, 
     
-    projectsTitle: "Mis proyectos", 
+    projectsTitle: "Proyectos", 
     ecommerceTitle: "Ecommerce Fullstack",
     ecommerceDesc: `Este proyecto es una plataforma ecommerce fullstack construida con Angular y Spring Boot.<br><br> 
     Implementa un sistema de autenticación seguro mediante JWT, gestión de usuarios, catálogo dinámico de productos, carrito persistente y proceso de compra completo.<br><br> 
@@ -55,7 +55,7 @@ const translations = {
     Each project presents a challenge that fosters my personal and professional growth.<br><br>
     I excel at rapid learning, perseverance, teamwork, and a professional approach to problem-solving.`, 
        
-    projectsTitle: "My projects",
+    projectsTitle: "Projects",
     ecommerceTitle: "Fullstack Ecommerce",
     ecommerceDesc: `This project is a full-stack ecommerce platform built with Angular and Spring Boot.<br><br>
     It implements a secure authentication system using JWT, user management, a dynamic product catalog, a persistent shopping cart, and a complete checkout process.<br><br>

@@ -27,7 +27,11 @@ const translations = {
     ecommerceTitle: "Ecommerce Fullstack",
     ecommerceDesc: `Este proyecto es una plataforma ecommerce fullstack construida con Angular y Spring Boot.<br><br> 
     Implementa un sistema de autenticación seguro mediante JWT, gestión de usuarios, catálogo dinámico de productos, carrito persistente y proceso de compra completo.<br><br> 
-    Además, cuenta con un panel de administración que permite realizar un CRUD completo (crear, leer, actualizar y eliminar) de productos, categorías y pedidos, garantizando una gestión integral del negocio.`, 
+    Además, cuenta con un panel de administración que permite realizar un CRUD completo (crear, leer, actualizar y eliminar) de productos, categorías y pedidos, garantizando una gestión integral del negocio.`,
+    taskflowTitle: "TaskFlow - Gestor de Tareas Fullstack",
+    taskflowDesc: `Aplicación completa para gestionar tareas con autenticación, subtareas, estados, filtros y panel Kanban.<br><br> 
+    Proyecto fullstack realista diseñado para demostrar arquitectura profesional y buenas prácticas.<br><br>
+    Diseñé y documenté la API REST usando Postman y aseguré los endpoints con JWT.`,
 
     skillsTitle: "Mis habilidades",
     

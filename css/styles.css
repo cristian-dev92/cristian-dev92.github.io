@@ -36,7 +36,7 @@ body {
   display: flex; 
   flex-direction: row; 
   flex-wrap: wrap; 
-  gap: 1rem; 
+  gap: 3rem; 
   justify-content: center; 
   align-items: center; 
 }
@@ -55,7 +55,7 @@ nav {
   align-items: center;
   background: var(--negro);
   z-index: 2000; 
-  gap: 2rem;
+  gap: 3rem;
 } 
 
 .nav-links a { 
@@ -74,7 +74,7 @@ nav {
 .nav-buttons { 
   display: flex; 
   align-items: center; 
-  gap: 0.8rem;
+  gap: 1rem;
 } 
 
 .nav-buttons button {
@@ -91,7 +91,7 @@ nav {
   min-width: 48px;
   display: flex; 
   align-items: center; 
-  gap: 0.5rem;
+  gap: 1rem;
   }
 
  .nav-buttons button:hover { 

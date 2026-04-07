@@ -378,15 +378,22 @@ footer a:hover {
   } 
   
   .skill-text {
+    display: flex;                 /* Alinea icono + texto */
+    align-items: center;           /* Centrado vertical */
+    gap: 10px;                     /* Espacio entre icono y texto */
     font-size: 1rem; 
     font-weight: 600;
     color: var(--blanco);
-    background: #1a1a1a; /* Fondo oscuro para que resalte */
+    background: #1a1a1a;   /* Fondo oscuro para que resalte */
     padding: 10px 20px;
-    border-radius: 50px; /* Forma de pastilla */
-    border: 1px solid var(--azul); /* Un toque de color */
+    border-radius: 50px;   /* Forma de pastilla */
+    border: 1px solid var(--azul);   /* Un toque de color */
     transition: 0.3s;
   } 
+
+  .skill-text i {
+    font-size: 22px;               /* Tamaño del icono */
+  }
 
   .skill-text:hover {
     background: var(--azul);

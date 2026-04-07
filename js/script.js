@@ -60,6 +60,10 @@ const translations = {
     ecommerceDesc: `This project is a full-stack ecommerce platform built with Angular and Spring Boot.<br><br>
     It implements a secure authentication system using JWT, user management, a dynamic product catalog, a persistent shopping cart, and a complete checkout process.<br><br>
     Furthermore, it features an administration panel that allows for full CRUD (create, read, update, and delete) functionality for products, categories, and orders, ensuring comprehensive business management.`,
+    taskflowTitle: "TaskFlow - Fullstack Task Manager",
+    taskflowDesc: `A complete application for managing tasks with authentication, subtasks, statuses, filters, and a Kanban board. <br><br>
+    A realistic full-stack project designed to demonstrate professional architecture and best practices.<br><br>
+    I designed and documented the REST API using Postman and secured the endpoints with JWT.`,
 
     skillsTitle: "My Skills",
     
@@ -155,6 +159,7 @@ function initCarousel(id) {
 }
 
 initCarousel("carousel1"); 
+initCarousel("carousel2"); 
 
 /* MODAL CON ZOOM + FLECHAS */ 
 

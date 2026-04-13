@@ -25,9 +25,9 @@ const translations = {
     
     projectsTitle: "Proyectos", 
     ecommerceTitle: "Ecommerce Fullstack",
-    ecommerceDesc: `Este proyecto es una plataforma ecommerce fullstack construida con Angular y Spring Boot.<br><br> 
-    Implementa un sistema de autenticación seguro mediante JWT, gestión de usuarios, catálogo dinámico de productos, carrito persistente y proceso de compra completo.<br><br> 
-    Además, cuenta con un panel de administración que permite realizar un CRUD completo (crear, leer, actualizar y eliminar) de productos, categorías y pedidos, garantizando una gestión integral del negocio.`,
+    ecommerceDesc: `Plataforma ecommerce completa con autenticación segura, gestión de usuarios, catálogo dinámico, carrito persistente y checkout funcional.<br><br> 
+    Incluye un panel de administración con CRUD de productos, categorías y pedidos.<br><br> 
+    El proyecto está desarrollado con Angular (arquitectura modular, servicios, guards, interceptores) y Spring Boot (REST API, validación, seguridad con JWT, persistencia con JPA y PostgreSQL).`,
     taskflowTitle: "TaskFlow - Gestor de Tareas Fullstack",
     taskflowDesc: `Aplicación completa para gestionar tareas con autenticación, subtareas, estados, filtros y panel Kanban.<br><br> 
     Proyecto fullstack realista diseñado para demostrar arquitectura profesional y buenas prácticas.<br><br>
@@ -61,9 +61,9 @@ const translations = {
        
     projectsTitle: "Projects",
     ecommerceTitle: "Fullstack Ecommerce",
-    ecommerceDesc: `This project is a full-stack ecommerce platform built with Angular and Spring Boot.<br><br>
-    It implements a secure authentication system using JWT, user management, a dynamic product catalog, a persistent shopping cart, and a complete checkout process.<br><br>
-    Furthermore, it features an administration panel that allows for full CRUD (create, read, update, and delete) functionality for products, categories, and orders, ensuring comprehensive business management.`,
+    ecommerceDesc: `A complete e-commerce platform with secure authentication, user management, a dynamic catalog, a persistent shopping cart, and a functional checkout.<br><br>
+    It includes an administration panel with CRUD operations for products, categories, and orders.<br><br>
+    The project is developed using Angular (modular architecture, services, guards, interceptors) and Spring Boot (REST API, validation, security with JWT, persistence with JPA, and PostgreSQL).`,
     taskflowTitle: "TaskFlow - Fullstack Task Manager",
     taskflowDesc: `A complete application for managing tasks with authentication, subtasks, statuses, filters, and a Kanban board. <br><br>
     A realistic full-stack project designed to demonstrate professional architecture and best practices.<br><br>

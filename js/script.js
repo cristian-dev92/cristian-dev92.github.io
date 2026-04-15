@@ -33,7 +33,7 @@ const translations = {
     Proyecto fullstack realista diseñado para demostrar arquitectura profesional y buenas prácticas.<br><br>
     Diseñé y documenté la API REST usando Postman y aseguré los endpoints con JWT.`,
     erpTitle: "Gestión inteligente de ERP y TPV",
-    taskflowDesc: `Solución integral de gestión comercial optimizada para el sector servicios.<br><br> 
+    erpDesc: `Solución integral de gestión comercial optimizada para el sector servicios.<br><br> 
     Este sistema permite un control total del inventario y ventas, integrando un módulo de comunicación directa con los sistemas de la Agencia Tributaria.`,
 
     skillsTitle: "Mis habilidades",
@@ -72,7 +72,7 @@ const translations = {
     A realistic full-stack project designed to demonstrate professional architecture and best practices.<br><br>
     I designed and documented the REST API using Postman and secured the endpoints with JWT.`,
     erpTitle: "ERP & TPV Smart Management",
-    taskflowDesc: `A comprehensive business management solution optimized for the service sector.<br><br> 
+    erpDesc: `A comprehensive business management solution optimized for the service sector.<br><br> 
     This system allows for complete control of inventory and sales, integrating a module for direct communication with the Tax Agency's systems.</strong>.`,
 
     skillsTitle: "My Skills",

@@ -13,21 +13,26 @@ const translations = {
     placeholderName: "Tu nombre", 
     placeholderEmail: "Tu email", 
     placeholderMessage: "Escribe tu mensaje...",
+    downloadCV: "Descargar CV",
     
     headerName: "¡Hola! Soy Cristian Alhambra", 
     headerRole: "Desarrollador Fullstack",
     
     aboutTitle: "Sobre mí",
-    aboutText: `Soy técnico superior en desarrollo de aplicaciones web, actualmente me desempeño como desarrollador fullstack con experiencia práctica en Java, Spring Boot, Angular y base de datos.<br><br>
-    Me enfoco en crear aplicaciones completas, funcionales y bien estructuradas. <br><br>
-    Cada proyecto supone un reto que impulsa mi crecimiento personal y profesional. <br><br>
-    Destaco por mi capacidad de aprendizaje rápido, constancia, trabajo en equipo y enfoque profesional en resolución de problemas.`, 
+    aboutText: `Tras más de diez años trabajando y ganando experiencia en el mundo laboral donde la tecnología siempre ha sido mi entorno, decidí actualizar mi carrera para centrarme en el desarrollo web.<br><br> 
+    Actualmente estoy finalizando el Grado de Desarrollo de Aplicaciones Web (DAW) y formándome como desarrollador Fullstack.<br><br> 
+    Me gusta crear aplicaciones que funcionen bien, que tengan una lógica sólida y que resuelvan problemas reales.<br><br>
+    Mi experiencia previa me ha enseñado el valor del trabajo en equipo, la constancia y a saber mantener la calma y buscar soluciones cuando las cosas se complican.<br><br>
+    Estoy listo para seguir aprendiendo, afrontar nuevos retos y aportar todo lo que he cosechado estos años en nuevos proyectos.`, 
     
     projectsTitle: "Proyectos", 
+    ecommerceStatus: "Listo para Producción",
     ecommerceTitle: "Ecommerce Fullstack",
-    ecommerceDesc: `Plataforma ecommerce completa con autenticación segura, gestión de usuarios, catálogo dinámico, carrito persistente y checkout funcional.<br><br> 
-    Incluye un panel de administración con CRUD de productos, categorías y pedidos.<br><br> 
-    El proyecto está desarrollado con Angular (arquitectura modular, servicios, guards, interceptores) y Spring Boot (REST API, validación, seguridad con JWT, persistencia con JPA y PostgreSQL).`,
+    ecommerceDesc: `Plataforma e-commerce robusta que simula un entorno real de producción. Implementa autenticación segura y persistencia de datos de alta disponibilidad.<br><br>
+    Cuenta con un panel de administración avanzado para la gestión integral del modelo de negocio (CRUD de productos, categorías y control de pedidos en tiempo real).<br><br>
+    Arquitectura Técnica: Desarrollada bajo un diseño desacoplado. El frontend exprime el potencial de Angular mediante arquitectura modular, guards de ruta, interceptores HTTP y gestión eficiente del estado.<br><br> 
+    El backend está construido sobre una API REST sólida en Spring Boot, securizada con JWT y con persistencia optimizada en PostgreSQL a través de Spring Data JPA`,
+    taskflowStatus: "Listo para Producción",
     taskflowTitle: "TaskFlow - Gestor de Tareas Fullstack",
     taskflowDesc: `Aplicación completa para gestionar tareas con autenticación, subtareas, estados, filtros y panel Kanban.<br><br> 
     Proyecto fullstack realista diseñado para demostrar arquitectura profesional y buenas prácticas.<br><br>
@@ -52,21 +57,26 @@ const translations = {
     placeholderName: "Your name", 
     placeholderEmail: "Your email", 
     placeholderMessage: "Write your message...",
+    downloadCV: "Download CV",
        
     headerName: "Cristian Alhambra",
     headerRole: "Fullstack Developer", 
        
     aboutTitle: "About me",
-    aboutText: `I am a certified web application developer and currently work as a full-stack developer with hands-on experience in Java, Spring Boot, Angular, and databases.<br><br>
-    I focus on creating complete, functional, and well-structured applications.<br><br>
-    Each project presents a challenge that fosters my personal and professional growth.<br><br>
-    I excel at rapid learning, perseverance, teamwork, and a professional approach to problem-solving.`, 
+    aboutText: `After more than ten years working and gaining experience in a field where technology has always been my environment, I decided to update my career to focus on web development.<br><br> 
+    I am currently finishing my Bachelor's Degree in Web Application Development (DAW) and training to become a Fullstack Developer.<br><br> 
+    I enjoy creating applications that work well, have solid logic, and solve real-world problems.<br><br> 
+    My previous experience has taught me the value of teamwork, perseverance, and knowing how to stay calm and find solutions when things get complicated.<br><br> 
+    I am ready to continue learning, take on new challenges, and contribute everything I have learned over the years to new projects.`, 
        
     projectsTitle: "Projects",
+    ecommerceStatus: "Production Ready",
     ecommerceTitle: "Fullstack Ecommerce",
-    ecommerceDesc: `A complete e-commerce platform with secure authentication, user management, a dynamic catalog, a persistent shopping cart, and a functional checkout.<br><br>
-    It includes an administration panel with CRUD operations for products, categories, and orders.<br><br>
-    The project is developed using Angular (modular architecture, services, guards, interceptors) and Spring Boot (REST API, validation, security with JWT, persistence with JPA, and PostgreSQL).`,
+    ecommerceDesc: `Robust e-commerce platform that simulates a real production environment. Implements secure authentication and high-availability data persistence.<br><br>
+    Features an advanced administration panel for comprehensive business model management (CRUD operations for products and categories, and real-time order tracking).<br><br>
+    Technical Architecture: Developed using a decoupled design. The frontend leverages the potential of Angular through modular architecture, route guards, HTTP interceptors, and efficient state management.<br><br>
+    The backend is built on a solid REST API in Spring Boot, secured with JWT, and with optimized persistence in PostgreSQL via Spring Data JPA.`,
+    taskflowStatus: "Production Ready",
     taskflowTitle: "TaskFlow - Fullstack Task Manager",
     taskflowDesc: `A complete application for managing tasks with authentication, subtasks, statuses, filters, and a Kanban board. <br><br>
     A realistic full-stack project designed to demonstrate professional architecture and best practices.<br><br>

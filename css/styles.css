@@ -184,59 +184,35 @@ header {
    BOTONES DE CURRICULUM (CV)
    ========================================================================== */
 
-cvToggle {
-  padding: 6px 12px; 
-  font-size: 1rem; 
-  border: 1px solid var(--blanco);
-  background: transparent; 
-  color: var(--blanco) !important;
-  border-radius: 6px; 
-  cursor: pointer; 
-  transition: 0.3s;
-  font-weight: 600; 
-  min-width: 48px;
-  height: 34px; /* Para que mida exactamente lo mismo que el botón de idioma */
+#cvToggle {
   display: inline-flex; 
   align-items: center; 
   justify-content: center;
-  text-decoration: none;
+  padding: 6px 16px; /* Más espacio a los lados para que quepa el texto cómodo */
+  font-size: 1rem; 
+  border: 1px solid var(--blanco); /* Mismo borde fino */
+  background: transparent; 
+  color: var(--blanco) !important; /* Mismo color de texto */
+  border-radius: 6px; /* Esquinas redondeadas idénticas */
+  cursor: pointer; 
+  transition: 0.3s;
+  font-weight: 600; 
+  text-transform: uppercase; /* Lo ponemos en mayúsculas como tus links */
+  letter-spacing: 1px;
+  text-decoration: none !important; /* Eliminamos el subrayado de enlace */
   box-sizing: border-box;
+  white-space: nowrap; /* Evita que el texto se rompa en dos líneas */
 }
 
+/* Efecto Hover (Igual que tus otros botones) */
 #cvToggle:hover {
   background: var(--morado); 
   border-color: var(--morado); 
+  color: #ffffff !important;
 }
 
-/* Botón del HEADER (Mismo estilo pero un pelín más ancho para el texto largo) */
-.header-action {
-  margin-top: 2rem;
-}
-
-.btn-header-cv {
-  padding: 8px 20px;
-  font-size: 1rem;
-  border: 1px solid var(--blanco);
-  background: transparent;
-  color: var(--blanco) !important;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn-header-cv:hover {
-  background: var(--azul);
-  border-color: var(--azul);
-}
-
-/* Ajuste automático para modo claro (sigue tus reglas actuales) */
-.light-mode #cvToggle,
-.light-mode .btn-header-cv {
+/* Compatibilidad total con tu Modo Claro */
+.light-mode #cvToggle {
   border-color: var(--blanco);
   color: var(--blanco) !important;
 }

@@ -184,67 +184,61 @@ header {
    BOTONES DE CURRICULUM (CV)
    ========================================================================== */
 
-/* Botón del Header */
-.header-action {
-  margin-top: 2.5rem;
-  animation: fadeIn 1s ease forwards;
-}
-
-.btn-download-cv {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 14px 28px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #ffffff !important;
-  background: linear-gradient(135deg, var(--azul), var(--morado));
-  border: none;
-  border-radius: 50px; /* Estilo píldora muy moderno */
-  text-decoration: none;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-  transition: all 0.3s ease;
-}
-
-.btn-download-cv i {
-  font-size: 1.2rem;
-}
-
-.btn-download-cv:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
-  filter: brightness(1.1);
-}
-
-/* Botón pequeño en el NAV */
-.btn-nav-cv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 6px 12px;
-  font-size: 1rem;
-  border: 1px solid var(--azul);
-  background: rgba(59, 130, 246, 0.1);
-  color: var(--azul) !important;
-  border-radius: 6px;
-  cursor: pointer;
-  text-decoration: none;
+cvToggle {
+  padding: 6px 12px; 
+  font-size: 1rem; 
+  border: 1px solid var(--blanco);
+  background: transparent; 
+  color: var(--blanco) !important;
+  border-radius: 6px; 
+  cursor: pointer; 
   transition: 0.3s;
+  font-weight: 600; 
   min-width: 48px;
-  height: 34px;
+  height: 34px; /* Para que mida exactamente lo mismo que el botón de idioma */
+  display: inline-flex; 
+  align-items: center; 
+  justify-content: center;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
-.btn-nav-cv:hover {
-  background: var(--azul);
-  color: #fff !important;
+#cvToggle:hover {
+  background: var(--morado); 
+  border-color: var(--morado); 
 }
 
-/* Animación sutil para que el botón del header aparezca suavemente */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+/* Botón del HEADER (Mismo estilo pero un pelín más ancho para el texto largo) */
+.header-action {
+  margin-top: 2rem;
+}
+
+.btn-header-cv {
+  padding: 8px 20px;
+  font-size: 1rem;
+  border: 1px solid var(--blanco);
+  background: transparent;
+  color: var(--blanco) !important;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-header-cv:hover {
+  background: var(--azul);
+  border-color: var(--azul);
+}
+
+/* Ajuste automático para modo claro (sigue tus reglas actuales) */
+.light-mode #cvToggle,
+.light-mode .btn-header-cv {
+  border-color: var(--blanco);
+  color: var(--blanco) !important;
 }
 
 /* ------------------ SECCIONES ------------------ */

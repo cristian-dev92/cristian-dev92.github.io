@@ -1,4 +1,4 @@
-# Portfolio Web de Cristian Alhambra Tormos 🚀
+# Portfolio Web de Cristian Alhambra Tormos
 
 Este es el repositorio de mi sitio web personal y portfolio profesional como desarrollador Full-Stack, alojado en GitHub Pages. 
 

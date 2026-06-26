@@ -49,9 +49,6 @@ const translations = {
     taskflowDesc: `Aplicación completa para gestionar tareas con autenticación, subtareas, estados, filtros y panel Kanban.<br><br> 
     Proyecto fullstack realista diseñado para demostrar arquitectura profesional y buenas prácticas.<br><br>
     Diseñé y documenté la API REST usando Postman y aseguré los endpoints con JWT.`,
-    erpTitle: "Gestión inteligente de ERP y TPV",
-    erpDesc: `Solución integral de gestión comercial optimizada para el sector servicios.<br><br> 
-    Este sistema permite un control total del inventario y ventas, integrando un módulo de comunicación directa con los sistemas de la Agencia Tributaria.`,
 
     // --- PROYECTO 4: Gestion de Reservas y Citas ---
     bookingStatus: "En Desarrollo",
@@ -61,7 +58,6 @@ const translations = {
     Implementará comunicación bidireccional mediante WebSockets para actualizar la disponibilidad de huecos de forma instantánea sin necesidad de recargar la aplicación.`,
 
     skillsTitle: "Mis habilidades",
-    
     closeModal: "✖",
     contactTitle: "Contacto" 
   }, 
@@ -112,9 +108,6 @@ const translations = {
     taskflowDesc: `A complete application for managing tasks with authentication, subtasks, statuses, filters, and a Kanban board. <br><br>
     A realistic full-stack project designed to demonstrate professional architecture and best practices.<br><br>
     I designed and documented the REST API using Postman and secured the endpoints with JWT.`,
-    erpTitle: "ERP & TPV Smart Management",
-    erpDesc: `A comprehensive business management solution optimized for the service sector.<br><br> 
-    This system allows for complete control of inventory and sales, integrating a module for direct communication with the Tax Agency's systems.</strong>.`,
 
     // --- PROJECT 4: BookPulse ---
     bookingStatus: "In Development",
@@ -124,7 +117,6 @@ const translations = {
     It will implement bidirectional communication via WebSockets to instantly update slot availability without requiring page refreshes.`,
 
     skillsTitle: "My Skills",
-    
     closeModal: "✖", 
     contactTitle: "Contact" 
   } 

@@ -26,12 +26,24 @@ const translations = {
     Estoy listo para seguir aprendiendo, afrontar nuevos retos y aportar todo lo que he cosechado estos años en nuevos proyectos.`, 
     
     projectsTitle: "Proyectos", 
+    
+    // --- PROYECTO 1: ERP & TPV ---
+    erpStatus: "Sistema Verifactu v1.0 Producción · En Desarrollo Activo",
+    erpTitle: "Gestión Inteligente ERP & TPV (SaaS)",
+    erpDesc: `Sistema completo de gestión comercial multi-inquilino (SaaS) adaptado a la normativa legal vigente de la AEAT.<br><br>
+    Garantiza el aislamiento estricto de datos mediante arquitectura Multi-Tenant, donde la identidad empresarial se extrae de forma segura a nivel de servidor directamente a través de tokens JWT.<br><br>
+    Implementa un ciclo de vida de ventas milimétrico: flujos de venta directa, reparaciones operativas con lógica de anticipos fraccionados, y auditoría exhaustiva de movimientos de caja (Aperturas, Cierres Z y descuadres manuales con trazabilidad de operario).<br><br>
+    Arquitectura Técnica: Backend robusto construido con Spring Boot y Spring Data JPA sobre base de datos PostgreSQL, securizado con filtros JWT, interactuando con módulos Angular desacoplados en el cliente y totalmente preparado para cumplir con los requisitos de registro de facturación de VeriFactu.`,
+
+    // --- PROYECTO 2: ECOMMERCE ---
     ecommerceStatus: "Listo para Producción",
     ecommerceTitle: "Ecommerce Fullstack",
     ecommerceDesc: `Plataforma e-commerce robusta que simula un entorno real de producción. Implementa autenticación segura y persistencia de datos de alta disponibilidad.<br><br>
     Cuenta con un panel de administración avanzado para la gestión integral del modelo de negocio (CRUD de productos, categorías y control de pedidos en tiempo real).<br><br>
     Arquitectura Técnica: Desarrollada bajo un diseño desacoplado. El frontend exprime el potencial de Angular mediante arquitectura modular, guards de ruta, interceptores HTTP y gestión eficiente del estado.<br><br> 
     El backend está construido sobre una API REST sólida en Spring Boot, securizada con JWT y con persistencia optimizada en PostgreSQL a través de Spring Data JPA`,
+
+    // --- PROYECTO 3: TASKFLOW ---
     taskflowStatus: "Listo para Producción",
     taskflowTitle: "TaskFlow - Gestor de Tareas Fullstack",
     taskflowDesc: `Aplicación completa para gestionar tareas con autenticación, subtareas, estados, filtros y panel Kanban.<br><br> 
@@ -40,6 +52,13 @@ const translations = {
     erpTitle: "Gestión inteligente de ERP y TPV",
     erpDesc: `Solución integral de gestión comercial optimizada para el sector servicios.<br><br> 
     Este sistema permite un control total del inventario y ventas, integrando un módulo de comunicación directa con los sistemas de la Agencia Tributaria.`,
+
+    // --- PROYECTO 4: Gestion de Reservas y Citas ---
+    bookingStatus: "En Desarrollo",
+    bookingTitle: "Plataforma de Gestión de Reservas y Citas",
+    bookingDesc: `Sistema centralizado para la reserva de citas y gestión de horarios en tiempo real.<br><br>
+    El proyecto está enfocado en resolver los problemas clásicos de concurrencia (evitar que dos personas reserven la misma hora a la vez) y la gestión estricta de zonas horarias mediante la API moderna de tiempo de Java.<br><br>
+    Implementará comunicación bidireccional mediante WebSockets para actualizar la disponibilidad de huecos de forma instantánea sin necesidad de recargar la aplicación.`,
 
     skillsTitle: "Mis habilidades",
     
@@ -70,12 +89,24 @@ const translations = {
     I am ready to continue learning, take on new challenges, and contribute everything I have learned over the years to new projects.`, 
        
     projectsTitle: "Projects",
+
+    // --- PROJECT 1: ERP & TPV ---
+    erpStatus: "Verifactu System v1.0 Production · Active Development",
+    erpTitle: "ERP & TPV Smart Management (SaaS)",
+    erpDesc: `Comprehensive multi-tenant business management system (SaaS) tailored to current AEAT legal regulations.<br><br>
+    Ensures strict data isolation using a Multi-Tenant architecture, where business identity is securely extracted at the server level directly through JWT tokens.<br><br>
+    Implements a precise sales lifecycle: direct checkout flows, service repairs with fractional down-payment logic, and exhaustive cash register auditing (Openings, Z-Closes, and manual adjustments with full operator traceability).<br><br>
+    Technical Architecture: Robust backend built with Spring Boot and Spring Data JPA over a PostgreSQL database, secured via JWT filters, communicating with decoupled Angular client modules, and fully engineered to comply with VeriFactu invoicing registry standards.`,
+
+    // --- PROJECT 2: ECOMMERCE ---
     ecommerceStatus: "Production Ready",
     ecommerceTitle: "Fullstack Ecommerce",
     ecommerceDesc: `Robust e-commerce platform that simulates a real production environment. Implements secure authentication and high-availability data persistence.<br><br>
     Features an advanced administration panel for comprehensive business model management (CRUD operations for products and categories, and real-time order tracking).<br><br>
     Technical Architecture: Developed using a decoupled design. The frontend leverages the potential of Angular through modular architecture, route guards, HTTP interceptors, and efficient state management.<br><br>
     The backend is built on a solid REST API in Spring Boot, secured with JWT, and with optimized persistence in PostgreSQL via Spring Data JPA.`,
+
+    // --- PROJECT 3: TASKFLOW ---
     taskflowStatus: "Production Ready",
     taskflowTitle: "TaskFlow - Fullstack Task Manager",
     taskflowDesc: `A complete application for managing tasks with authentication, subtasks, statuses, filters, and a Kanban board. <br><br>
@@ -84,6 +115,13 @@ const translations = {
     erpTitle: "ERP & TPV Smart Management",
     erpDesc: `A comprehensive business management solution optimized for the service sector.<br><br> 
     This system allows for complete control of inventory and sales, integrating a module for direct communication with the Tax Agency's systems.</strong>.`,
+
+    // --- PROJECT 4: BookPulse ---
+    bookingStatus: "In Development",
+    bookingTitle: "Appointment & Booking Management Platform",
+    bookingDesc: `Centralized system for real-time appointment booking and schedule management.<br><br>
+    The project focuses on solving classic concurrency challenges (preventing double-bookings) and strict timezone handling utilizing Java's modern Time API.<br><br>
+    It will implement bidirectional communication via WebSockets to instantly update slot availability without requiring page refreshes.`,
 
     skillsTitle: "My Skills",
     
@@ -180,6 +218,7 @@ function initCarousel(id) {
 
 initCarousel("carousel1"); 
 initCarousel("carousel2"); 
+initCarousel("carousel3");
 
 /* MODAL CON ZOOM + FLECHAS */ 
 

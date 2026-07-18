@@ -684,57 +684,7 @@ footer a:hover {
     color: var(--morado);
   }
 
- /* ------------------ NAV RESPONSIVE ------------------ */ 
- @media (max-width: 768px) {
-
-  nav { 
-    justify-content: center; 
-  }
-
-   section {
-     padding-top: 80px;
-   }
-
-  .skills-list {
-    gap: 0.6rem; /* Reducimos el espacio en móvil */
-  }
-   
-  .skill-text {
-    font-size: 0.9rem;
-    padding: 8px 15px;
-  }
-  
-  /* Evitar que el header suba debajo del nav */
-  header { 
-    margin-top: 40px; 
-    width: 100%; 
-    overflow: hidden;
-}
-
-   .typing {
-    font-size: 1.6rem;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-align: center;
-    border-right: 2px solid var(--azul);   
-    animation: typingMobile 3s steps(27) forwards, blink 0.7s step-end infinite, hideCursor 0.1s forwards 2s;    
-  }
-
-  .typing2 {
-    font-size: 1.1rem;
-    white-space: nowrap; 
-    overflow: hidden;
-    text-align: center;
-    border-right: 2px solid var(--azul); 
-    animation: typingMobile 3s steps(23) forwards, blink 0.7s step-end infinite, hideCursor 0.1s forwards 2s;
-  }
-
-  @keyframes typingMobile {
-    from { width: 0 }
-    to { width: 27ch; }
-  }
-   
-  /* Cartas de presentación de sobre mi */
+  /* ------------------ CARTAS DE PRESENTACION EN SOBRE MI ------------------ */ 
   .about-cards {
     display: flex;
     gap: 1.5rem;
@@ -800,3 +750,74 @@ footer a:hover {
   .light-mode .about-summary {
     color: #111827;
   }
+
+ /* ------------------ NAV RESPONSIVE ------------------ */ 
+ @media (max-width: 768px) {
+
+  nav { 
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .nav-links {
+    gap: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .nav-links a {
+    font-size: 0.85rem;
+  }
+
+  .nav-buttons {
+    gap: 0.5rem;
+  }
+
+  .nav-buttons button {
+    min-width: 40px;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+  }
+
+  section {
+    padding-top: 80px;
+  }
+
+  .skills-list {
+    gap: 0.6rem;
+  }
+   
+  .skill-text {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  
+  header { 
+    margin-top: 40px; 
+    width: 100%; 
+    overflow: hidden;
+  }
+
+  .typing {
+    font-size: 1.6rem;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-align: center;
+    border-right: 2px solid var(--azul);   
+    animation: typingMobile 3s steps(27) forwards, blink 0.7s step-end infinite, hideCursor 0.1s forwards 2s;    
+  }
+
+  .typing2 {
+    font-size: 1.1rem;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-align: center;
+    border-right: 2px solid var(--azul); 
+    animation: typingMobile 3s steps(23) forwards, blink 0.7s step-end infinite, hideCursor 0.1s forwards 2s;
+  }
+
+  @keyframes typingMobile {
+    from { width: 0; }
+    to { width: 27ch; }
+  }
+}

@@ -17,9 +17,13 @@ const translations = {
     
     headerName: "¡Hola! Soy Cristian Alhambra", 
     headerRole: "Desarrollador Fullstack",
+
+    aboutCard1: "Experiencia industrial en producción, calidad y gestión de equipos",
+    aboutCard2: "Finalizando Grado en Desarrollo de Aplicaciones Web",
+    aboutCard3: "Java Spring Boot + Angular + Docker + PostgreSQL",
     
     aboutTitle: "Sobre mí",
-    aboutText: `Tras más de diez años trabajando y ganando experiencia en el mundo laboral donde la tecnología siempre ha sido mi entorno, decidí actualizar mi carrera para centrarme en el desarrollo web.<br><br> 
+    aboutText: `Tras más de diez años en el mundo industrial, decidí actualizar mi carrera para centrarme en el desarrollo web.<br><br> 
     Actualmente estoy finalizando el Grado de Desarrollo de Aplicaciones Web (DAW) y formándome como desarrollador Fullstack.<br><br> 
     Me gusta crear aplicaciones que funcionen bien, que tengan una lógica sólida y que resuelvan problemas reales.<br><br>
     Mi experiencia previa me ha enseñado el valor del trabajo en equipo, la constancia y a saber mantener la calma y buscar soluciones cuando las cosas se complican.<br><br>
@@ -37,7 +41,7 @@ const translations = {
 
     // --- PROYECTO 2: ECOMMERCE ---
     ecommerceStatus: "Listo para Producción",
-    ecommerceTitle: "Ecommerce Fullstack",
+    ecommerceTitle: "DevShop - Ecommerce Fullstack",
     ecommerceDesc: `Plataforma e-commerce robusta que simula un entorno real de producción. Implementa autenticación segura y persistencia de datos de alta disponibilidad.<br><br>
     Cuenta con un panel de administración avanzado para la gestión integral del modelo de negocio (CRUD de productos, categorías y control de pedidos en tiempo real).<br><br>
     Arquitectura Técnica: Desarrollada bajo un diseño desacoplado. El frontend exprime el potencial de Angular mediante arquitectura modular, guards de ruta, interceptores HTTP y gestión eficiente del estado.<br><br> 
@@ -52,7 +56,7 @@ const translations = {
 
     // --- PROYECTO 4: Gestion de Reservas y Citas ---
     bookingStatus: "En Desarrollo",
-    bookingTitle: "Plataforma de Gestión de Reservas y Citas",
+    bookingTitle: "BookPulse - Plataforma de Gestión de Reservas y Citas",
     bookingDesc: `Sistema centralizado para la reserva de citas y gestión de horarios en tiempo real.<br><br>
     El proyecto está enfocado en resolver los problemas clásicos de concurrencia (evitar que dos personas reserven la misma hora a la vez) y la gestión estricta de zonas horarias mediante la API moderna de tiempo de Java.<br><br>
     Implementará comunicación bidireccional mediante WebSockets para actualizar la disponibilidad de huecos de forma instantánea sin necesidad de recargar la aplicación.`,
@@ -74,11 +78,15 @@ const translations = {
     placeholderMessage: "Write your message...",
     downloadCV: "Download CV",
        
-    headerName: "Cristian Alhambra",
+    headerName: "Hi! I'm Cristian Alhambra",
     headerRole: "Fullstack Developer", 
+
+    aboutCard1: "Industrial experience in production, quality and team management",
+    aboutCard2: "Finishing Degree in Web Application Development (DAW)",
+    aboutCard3: "Java Spring Boot + Angular + Docker + PostgreSQL",
        
     aboutTitle: "About me",
-    aboutText: `After more than ten years working and gaining experience in a field where technology has always been my environment, I decided to update my career to focus on web development.<br><br> 
+    aboutText: `After more than ten years in the industrial sector, I decided to update my career to focus on web development.<br><br> 
     I am currently finishing my Bachelor's Degree in Web Application Development (DAW) and training to become a Fullstack Developer.<br><br> 
     I enjoy creating applications that work well, have solid logic, and solve real-world problems.<br><br> 
     My previous experience has taught me the value of teamwork, perseverance, and knowing how to stay calm and find solutions when things get complicated.<br><br> 
@@ -96,7 +104,7 @@ const translations = {
 
     // --- PROJECT 2: ECOMMERCE ---
     ecommerceStatus: "Production Ready",
-    ecommerceTitle: "Fullstack Ecommerce",
+    ecommerceTitle: "DevShop - Fullstack Ecommerce",
     ecommerceDesc: `Robust e-commerce platform that simulates a real production environment. Implements secure authentication and high-availability data persistence.<br><br>
     Features an advanced administration panel for comprehensive business model management (CRUD operations for products and categories, and real-time order tracking).<br><br>
     Technical Architecture: Developed using a decoupled design. The frontend leverages the potential of Angular through modular architecture, route guards, HTTP interceptors, and efficient state management.<br><br>
@@ -111,7 +119,7 @@ const translations = {
 
     // --- PROJECT 4: BookPulse ---
     bookingStatus: "In Development",
-    bookingTitle: "Appointment & Booking Management Platform",
+    bookingTitle: "BookPulse - Appointment & Booking Management Platform",
     bookingDesc: `Centralized system for real-time appointment booking and schedule management.<br><br>
     The project focuses on solving classic concurrency challenges (preventing double-bookings) and strict timezone handling utilizing Java's modern Time API.<br><br>
     It will implement bidirectional communication via WebSockets to instantly update slot availability without requiring page refreshes.`,
@@ -198,7 +206,7 @@ function initCarousel(id) {
   setInterval(() => {
     index = (index + 1) % images.length; 
     showImage(index);
-  }, 3000); 
+  }, 5000); 
 
    // Abrir modal al hacer clic 
   images.forEach((img, i) => { 

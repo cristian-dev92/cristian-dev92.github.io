@@ -32,12 +32,12 @@ const translations = {
     projectsTitle: "Proyectos", 
     
     // --- PROYECTO 1: ERP & TPV ---
-    erpStatus: "Sistema Verifactu v1.0 Producción · En Desarrollo Activo",
+    erpStatus: "Sistema Verifactu v2.0 Producción · En Desarrollo Activo",
     erpTitle: "Gestión Inteligente ERP & TPV (SaaS)",
     erpDesc: `Sistema completo de gestión comercial multi-inquilino (SaaS) adaptado a la normativa legal vigente de la AEAT.<br><br>
     Garantiza el aislamiento estricto de datos mediante arquitectura Multi-Tenant, donde la identidad empresarial se extrae de forma segura a nivel de servidor directamente a través de tokens JWT.<br><br>
-    Implementa un ciclo de vida de ventas milimétrico: flujos de venta directa, reparaciones operativas con lógica de anticipos fraccionados, y auditoría exhaustiva de movimientos de caja (Aperturas, Cierres Z y descuadres manuales con trazabilidad de operario).<br><br>
-    Arquitectura Técnica: Backend robusto construido con Spring Boot y Spring Data JPA sobre base de datos PostgreSQL, securizado con filtros JWT, interactuando con módulos Angular desacoplados en el cliente y totalmente preparado para cumplir con los requisitos de registro de facturación de VeriFactu.`,
+    Evolución a la v2.0: Implementa un ciclo de vida de ventas y taller unificado "All-in-One", organización por familias, sistema de devoluciones parciales con facturas rectificativas (DEV-), auditoría de caja con soporte para Bizum (Aperturas, Cierres Z) e importación/exportación de datos a Excel/CSV.<br><br>
+    Arquitectura Técnica: Backend robusto construido con Spring Boot y Spring Data JPA sobre base de datos PostgreSQL, securizado con filtros JWT, interactuando con un frontend reactivo en Angular optimizado para pantallas táctiles, tablets y móviles, preparado para cumplir con los requisitos de registro de facturación de VeriFactu.`,
 
     // --- PROYECTO 2: ECOMMERCE ---
     ecommerceStatus: "Listo para Producción",
@@ -99,8 +99,8 @@ const translations = {
     erpTitle: "ERP & TPV Smart Management (SaaS)",
     erpDesc: `Comprehensive multi-tenant business management system (SaaS) tailored to current AEAT legal regulations.<br><br>
     Ensures strict data isolation using a Multi-Tenant architecture, where business identity is securely extracted at the server level directly through JWT tokens.<br><br>
-    Implements a precise sales lifecycle: direct checkout flows, service repairs with fractional down-payment logic, and exhaustive cash register auditing (Openings, Z-Closes, and manual adjustments with full operator traceability).<br><br>
-    Technical Architecture: Robust backend built with Spring Boot and Spring Data JPA over a PostgreSQL database, secured via JWT filters, communicating with decoupled Angular client modules, and fully engineered to comply with VeriFactu invoicing registry standards.`,
+    Evolution to v2.0: Implements a unified "All-in-One" sales and workshop lifecycle, product family organization, a partial return system using corrective invoices (DEV-), cash auditing with Bizum support (openings, Z-reports), and data import/export to Excel/CSV.<br><br>
+    Technical Architecture: Robust backend built with Spring Boot and Spring Data JPA over a PostgreSQL database, secured via JWT filters, interacting with a reactive Angular frontend optimized for touchscreens, tablets, and mobile devices, and designed to meet VeriFactu billing record-keeping requirements.`,
 
     // --- PROJECT 2: ECOMMERCE ---
     ecommerceStatus: "Production Ready",

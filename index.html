@@ -284,7 +284,9 @@
          <input type="text" name="name" placeholder="Tu nombre" data-key="placeholderName" required> 
          <input type="email" name="email" placeholder="Tu email" data-key="placeholderEmail" required> 
          <textarea name="message" placeholder="Escribe tu mensaje..." data-key="placeholderMessage" required></textarea>
-         <button type="submit" data-key="sendMessage">Enviar mensaje</button> 
+         <button type="submit" id="submitBtn" data-key="sendMessage">Enviar mensaje</button>
+         <!-- Contenedor para mensajes de feedback -->
+         <p id="formStatus" style="display: none; margin-top: 15px; font-weight: bold; text-align: center;"></p>
        </form>
      
         <div class="contact-links">

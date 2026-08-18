@@ -20,7 +20,7 @@ const translations = {
 
     aboutCard1: "Experiencia industrial en producción, calidad y gestión de equipos",
     aboutCard2: "Finalizando Grado en Desarrollo de Aplicaciones Web",
-    aboutCard3: "Java Spring Boot + Angular + Docker + PostgreSQL",
+    aboutCard3: "Java Spring Boot + Angular + React + Docker + PostgreSQL",
     
     aboutTitle: "Sobre mí",
     aboutText: `Tras más de diez años en el mundo industrial, decidí actualizar mi carrera para centrarme en el desarrollo web.<br><br> 
@@ -83,7 +83,7 @@ const translations = {
 
     aboutCard1: "Industrial experience in production, quality and team management",
     aboutCard2: "Finishing Degree in Web Application Development (DAW)",
-    aboutCard3: "Java Spring Boot + Angular + Docker + PostgreSQL",
+    aboutCard3: "Java Spring Boot + Angular + React + Docker + PostgreSQL",
        
     aboutTitle: "About me",
     aboutText: `After more than ten years in the industrial sector, I decided to update my career to focus on web development.<br><br> 
@@ -288,3 +288,56 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     }
   });
 });
+
+/* ----------- RESETEAR Y ESTADO DE CARGA EN FORMULARIO ----------- */
+const contactForm = document.querySelector(".contact-form");
+const submitBtn = document.getElementById("submitBtn");
+const formStatus = document.getElementById("formStatus");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    // 1. Guardar texto original y activar estado de carga
+    const originalBtnText = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.style.opacity = "0.7";
+    submitBtn.style.cursor = "not-allowed";
+    submitBtn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> Enviando...`;
+    
+    formStatus.style.display = "none";
+
+    const formData = new FormData(this);
+
+    try {
+      const response = await fetch(this.action, {
+        method: this.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        // 2. Feedback de éxito y reseteo
+        formStatus.textContent = "¡Mensaje enviado con éxito! Te responderé lo antes posible.";
+        formStatus.style.color = "#2ef072"; // Verde o el color acentuado de tu tema
+        formStatus.style.display = "block";
+        this.reset();
+      } else {
+        throw new Error("Respuesta de servidor no válida");
+      }
+    } catch (error) {
+      // 3. Feedback de error
+      formStatus.textContent = "Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.";
+      formStatus.style.color = "#ff4d4d";
+      formStatus.style.display = "block";
+    } finally {
+      // 4. Restaurar el botón a su estado original
+      submitBtn.disabled = false;
+      submitBtn.style.opacity = "1";
+      submitBtn.style.cursor = "pointer";
+      submitBtn.innerHTML = originalBtnText;
+    }
+  });
+}

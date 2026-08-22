@@ -55,11 +55,12 @@ const translations = {
     Diseñé y documenté la API REST usando Postman y aseguré los endpoints con JWT.`,
 
     // --- PROYECTO 4: Gestion de Reservas y Citas ---
-    bookingStatus: "En Desarrollo",
+    bookingStatus: "Listo para Producción",
     bookingTitle: "BookPulse - Plataforma de Gestión de Reservas y Citas",
-    bookingDesc: `Sistema centralizado para la reserva de citas y gestión de horarios en tiempo real.<br><br>
-    El proyecto está enfocado en resolver los problemas clásicos de concurrencia (evitar que dos personas reserven la misma hora a la vez) y la gestión estricta de zonas horarias mediante la API moderna de tiempo de Java.<br><br>
-    Implementará comunicación bidireccional mediante WebSockets para actualizar la disponibilidad de huecos de forma instantánea sin necesidad de recargar la aplicación.`,
+    bookingDesc: `Sistema completo de reserva de citas y gestión de horarios en tiempo real con pasarela de pagos y notificaciones automáticas.<br><br>
+    Garantiza el control estricto de concurrencia para evitar solapamientos (*double-booking*) y una gestión precisa de zonas horarias e intervalos de disponibilidad mediante la API (java.time) en UTC.<br><br>
+    Implementa un flujo de reserva completo con pagos en línea mediante **Stripe Checkout** y confirmaciones automáticas multicanal por correo electrónico (**Resend API**) y mensajería instantánea (**Twilio WhatsApp/SMS**).<br><br>
+    Arquitectura Técnica: Diseñada bajo una estructura desacoplada con backend en Spring Boot sobre PostgreSQL securizado con **Spring Security y JWT**, panel de administración para gestión de servicios/horarios, y frontend SPA reactivo desarrollado con **React (Vite)** y **Tailwind CSS**, desplegado de forma independiente en Vercel y Render.`,
 
     skillsTitle: "Mis habilidades",
     closeModal: "✖",
@@ -118,11 +119,12 @@ const translations = {
     I designed and documented the REST API using Postman and secured the endpoints with JWT.`,
 
     // --- PROJECT 4: BookPulse ---
-    bookingStatus: "In Development",
+    bookingStatus: "Production Ready",
     bookingTitle: "BookPulse - Appointment & Booking Management Platform",
-    bookingDesc: `Centralized system for real-time appointment booking and schedule management.<br><br>
-    The project focuses on solving classic concurrency challenges (preventing double-bookings) and strict timezone handling utilizing Java's modern Time API.<br><br>
-    It will implement bidirectional communication via WebSockets to instantly update slot availability without requiring page refreshes.`,
+    bookingDesc: `Complete real-time appointment booking and scheduling management system with a payment gateway and automated notifications.<br><br>
+    Ensures strict concurrency control to prevent overlaps (double-booking) and precise management of time zones and availability intervals using the API (java.time) in UTC.<br><br>
+    Implement a complete booking flow featuring online payments via **Stripe Checkout** and automated multi-channel confirmations via email (**Resend API**) and instant messaging (**Twilio WhatsApp/SMS**).<br><br>
+    Arquitectura Técnica: Diseñada bajo una estructura desacoplada con backend en Spring Boot sobre PostgreSQL securizado con **Spring Security y JWT**, panel de administración para gestión de servicios/horarios, y frontend SPA reactivo desarrollado con **React (Vite)** y **Tailwind CSS**, desplegado de forma independiente en Vercel y Render.`,
 
     skillsTitle: "My Skills",
     closeModal: "✖", 
@@ -219,6 +221,7 @@ function initCarousel(id) {
 initCarousel("carousel1"); 
 initCarousel("carousel2"); 
 initCarousel("carousel3");
+initCarousel("carousel4");
 
 /* MODAL CON ZOOM + FLECHAS */ 
 

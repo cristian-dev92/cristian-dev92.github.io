@@ -124,7 +124,7 @@ const translations = {
     bookingDesc: `Complete real-time appointment booking and scheduling management system with a payment gateway and automated notifications.<br><br>
     Ensures strict concurrency control to prevent overlaps (double-booking) and precise management of time zones and availability intervals using the API (java.time) in UTC.<br><br>
     Implement a complete booking flow featuring online payments via **Stripe Checkout** and automated multi-channel confirmations via email (**Resend API**) and instant messaging (**Twilio WhatsApp/SMS**).<br><br>
-    Arquitectura Técnica: Diseñada bajo una estructura desacoplada con backend en Spring Boot sobre PostgreSQL securizado con **Spring Security y JWT**, panel de administración para gestión de servicios/horarios, y frontend SPA reactivo desarrollado con **React (Vite)** y **Tailwind CSS**, desplegado de forma independiente en Vercel y Render.`,
+    Technical Architecture: Designed with a decoupled structure featuring a Spring Boot backend on PostgreSQL secured with **Spring Security and JWT**, an administration panel for service and schedule management, and a reactive SPA frontend built with **React (Vite)** and **Tailwind CSS**, independently deployed on Vercel and Render.`,
 
     skillsTitle: "My Skills",
     closeModal: "✖", 

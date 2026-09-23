@@ -27,7 +27,7 @@ const translations = {
     Actualmente estoy finalizando el Grado de Desarrollo de Aplicaciones Web (DAW) y formándome como desarrollador Fullstack.<br><br> 
     Me gusta crear aplicaciones que funcionen bien, que tengan una lógica sólida y que resuelvan problemas reales.<br><br>
     Mi experiencia previa me ha enseñado el valor del trabajo en equipo, la constancia y a saber mantener la calma y buscar soluciones cuando las cosas se complican.<br><br>
-    Estoy listo para seguir aprendiendo, afrontar nuevos retos y aportar todo lo que he cosechado estos años en nuevos proyectos.`, 
+    Estoy listo para seguir aprendiendo, afrontar nuevos retos y aportar todo lo que he aprendido estos años en nuevos proyectos.`, 
     
     projectsTitle: "Proyectos", 
     

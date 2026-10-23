@@ -76,11 +76,20 @@
     <section id="proyectos"> 
      <h2 data-key="projectsTitle">Proyectos</h2>
 
-       <div class="card card-developing"> 
-        <div class="status-badge">
-        <span class="loading-ball"></span>
-        <span class="status-text" data-key="erpStatus">Sistema Verifactu v2.0 Producción · En Desarrollo Activo</span>
+      <!-- PROYECTO: ERP/TPV -->
+      <div class="card card-featured"> 
+      <!-- Contenedor para alinear los dos badges en la misma fila -->
+      <div class="badges-container">
+        <div class="status-featured">
+          <i class="fa-solid fa-star"></i>
+          <span class="status-text-featured" data-key="featuredProject">Proyecto Destacado</span>
+      </div>
+    
+      <div class="status-stable">
+        <i class="fa-solid fa-circle-check"></i>
+        <span class="status-text-stable" data-key="erpStatus">Listo para Producción</span>
        </div>
+      </div>
 
         <h3 data-key="erpTitle">Gestión inteligente ERP & TPV</h3> 
         <p class="tech">Spring Boot · Angular · PostgreSQL · Docker · API AEAT</p> 
@@ -137,7 +146,54 @@
           </a>
          </div>
         </div>
-      
+
+      <!-- PROYECTO: BOOKPULSE -->
+      <div class="card"> 
+       <div class="status-stable">
+        <i class="fa-solid fa-circle-check"></i>
+        <span class="status-text-stable" data-key="bookingStatus">Listo para Producción</span>
+      </div>
+
+      <h3 data-key="bookingTitle">Bookpulse - Plataforma de Gestión de Reservas y Citas</h3> 
+      <p class="tech">Spring Boot · React · PostgreSQL · Stripe · Resend · Twilio</p> 
+
+      <p class="descripcion" data-key="bookingDesc"></p> 
+
+      <div class="carousel" id="carousel4"> 
+        <span class="arrow left">❮</span> 
+        <span class="arrow right">❯</span>
+
+        <img src="assets/bookpulse/login.png" class="active" loading="lazy">
+        <img src="assets/bookpulse/registro.png" loading="lazy"> 
+        <img src="assets/bookpulse/citas1.png" loading="lazy">
+        <img src="assets/bookpulse/citas2.png" loading="lazy">
+        <img src="assets/bookpulse/pago.png" loading="lazy">
+        <img src="assets/bookpulse/pago2.png" loading="lazy">
+        <img src="assets/bookpulse/citas3.png" loading="lazy">
+        <img src="assets/bookpulse/gmail.png" loading="lazy">
+        <img src="assets/bookpulse/miperfil.png" loading="lazy">
+        <img src="assets/bookpulse/calendario.png" loading="lazy">
+        <img src="assets/bookpulse/admincitas.png" loading="lazy">
+        <img src="assets/bookpulse/servicios.png" loading="lazy">
+        <img src="assets/bookpulse/servicios2.png" loading="lazy">
+        <img src="assets/bookpulse/servicios3.png" loading="lazy">
+        <img src="assets/bookpulse/usuarios.png" loading="lazy">
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/cristian-dev92/bookpulse-frontend" target="_blank" class="btn-project">
+          <i class="devicon-github-original"></i> Frontend
+        </a> 
+        <a href="https://github.com/cristian-dev92/bookpulse-backend" target="_blank" class="btn-project">
+          <i class="devicon-github-original"></i> Backend
+        </a> 
+        <a href="https://bookpulse-frontend-ten.vercel.app/login" target="_blank" class="btn-project btn-demo">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Live
+        </a> 
+      </div>
+     </div>
+
+      <!-- PROYECTO: DEVSHOP -->
       <div class="card"> 
         <div class="status-stable">
           <i class="fa-solid fa-circle-check"></i>
@@ -179,6 +235,7 @@
          </div>
         </div> 
 
+      <!-- PROYECTO: TASKFLOW -->
       <div class="card"> 
        <div class="status-stable">
          <i class="fa-solid fa-circle-check"></i>
@@ -218,50 +275,18 @@
       </div>
     </div>
 
-     <div class="card"> 
-      <div class="status-stable">
-       <i class="fa-solid fa-circle-check"></i>
-      <span class="status-text-stable" data-key="bookingStatus">Listo para Producción</span>
-    </div>
-
-     <h3 data-key="bookingTitle">Plataforma de Gestión de Reservas y Citas</h3> 
-     <p class="tech">Spring Boot · React · PostgreSQL · Stripe · Resend · Twilio</p> 
-
-     <p class="descripcion" data-key="bookingDesc"></p> 
-
-     <div class="carousel" id="carousel4"> 
-        <span class="arrow left">❮</span> 
-        <span class="arrow right">❯</span>
-
-        <img src="assets/bookpulse/login.png" class="active" loading="lazy">
-        <img src="assets/bookpulse/registro.png" loading="lazy"> 
-        <img src="assets/bookpulse/citas1.png" loading="lazy">
-        <img src="assets/bookpulse/citas2.png" loading="lazy">
-        <img src="assets/bookpulse/pago.png" loading="lazy">
-        <img src="assets/bookpulse/pago2.png" loading="lazy">
-        <img src="assets/bookpulse/citas3.png" loading="lazy">
-        <img src="assets/bookpulse/gmail.png" loading="lazy">
-        <img src="assets/bookpulse/miperfil.png" loading="lazy">
-        <img src="assets/bookpulse/calendario.png" loading="lazy">
-        <img src="assets/bookpulse/admincitas.png" loading="lazy">
-        <img src="assets/bookpulse/servicios.png" loading="lazy">
-        <img src="assets/bookpulse/servicios2.png" loading="lazy">
-        <img src="assets/bookpulse/servicios3.png" loading="lazy">
-        <img src="assets/bookpulse/usuarios.png" loading="lazy">
+      <!-- PROYECTO: EUDI VERIFIER -->
+      <div class="card card-developing"> 
+      <div class="status-badge">
+        <div class="loading-ball"></div>
+        <span class="status-text" data-key="verifierStatus">En Desarrollo</span>
       </div>
+   
+      <h3 data-key="verifierTitle">EUDI Verifier - SDK Identidad Digital & SSI</h3> 
+      <p class="tech">Java · Spring Boot · SSI / Verifiable Credentials · Postman · REST API</p> 
 
-      <div class="project-links">
-        <a href="https://github.com/cristian-dev92/bookpulse-frontend" target="_blank" class="btn-project">
-          <i class="devicon-github-original"></i> Frontend
-        </a> 
-        <a href="https://github.com/cristian-dev92/bookpulse-backend" target="_blank" class="btn-project">
-          <i class="devicon-github-original"></i> Backend
-        </a> 
-        <a href="https://bookpulse-frontend-ten.vercel.app/login" target="_blank" class="btn-project btn-demo">
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> Demo Live
-        </a> 
-      </div>
-    </div>
+      <p class="descripcion" data-key="verifierDesc"></p>
+
 
     </section>
 

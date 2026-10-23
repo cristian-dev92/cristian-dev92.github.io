@@ -31,15 +31,16 @@ const translations = {
     
     projectsTitle: "Proyectos", 
     
-    // --- PROYECTO 1: ERP & TPV ---
-    erpStatus: "Sistema Verifactu v2.0 Producción · En Desarrollo Activo",
+    // --- PROYECTO: ERP & TPV ---
+    featuredProject: "Proyecto Destacado",
+    erpStatus: "Listo para Producción",
     erpTitle: "Gestión Inteligente ERP & TPV (SaaS)",
     erpDesc: `Sistema completo de gestión comercial multi-inquilino (SaaS) adaptado a la normativa legal vigente de la AEAT.<br><br>
     Garantiza el aislamiento estricto de datos mediante arquitectura Multi-Tenant, donde la identidad empresarial se extrae de forma segura a nivel de servidor directamente a través de tokens JWT.<br><br>
     Evolución a la v2.0: Implementa un ciclo de vida de ventas y taller unificado "All-in-One", organización por familias, sistema de devoluciones parciales con facturas rectificativas (DEV-), auditoría de caja con soporte para Bizum (Aperturas, Cierres Z) e importación/exportación de datos a Excel/CSV.<br><br>
     Arquitectura Técnica: Backend robusto construido con Spring Boot y Spring Data JPA sobre base de datos PostgreSQL, securizado con filtros JWT, interactuando con un frontend reactivo en Angular optimizado para pantallas táctiles, tablets y móviles, preparado para cumplir con los requisitos de registro de facturación de VeriFactu.`,
 
-    // --- PROYECTO 2: ECOMMERCE ---
+    // --- PROYECTO: ECOMMERCE ---
     ecommerceStatus: "Listo para Producción",
     ecommerceTitle: "DevShop - Ecommerce Fullstack",
     ecommerceDesc: `Plataforma e-commerce robusta que simula un entorno real de producción. Implementa autenticación segura y persistencia de datos de alta disponibilidad.<br><br>
@@ -47,14 +48,14 @@ const translations = {
     Arquitectura Técnica: Desarrollada bajo un diseño desacoplado. El frontend exprime el potencial de Angular mediante arquitectura modular, guards de ruta, interceptores HTTP y gestión eficiente del estado.<br><br> 
     El backend está construido sobre una API REST sólida en Spring Boot, securizada con JWT y con persistencia optimizada en PostgreSQL a través de Spring Data JPA`,
 
-    // --- PROYECTO 3: TASKFLOW ---
+    // --- PROYECTO: TASKFLOW ---
     taskflowStatus: "Listo para Producción",
     taskflowTitle: "TaskFlow - Gestor de Tareas Fullstack",
     taskflowDesc: `Aplicación completa para gestionar tareas con autenticación, subtareas, estados, filtros y panel Kanban.<br><br> 
     Proyecto fullstack realista diseñado para demostrar arquitectura profesional y buenas prácticas.<br><br>
     Diseñé y documenté la API REST usando Postman y aseguré los endpoints con JWT.`,
 
-    // --- PROYECTO 4: Gestion de Reservas y Citas ---
+    // --- PROYECTO: Gestion de Reservas y Citas ---
     bookingStatus: "Listo para Producción",
     bookingTitle: "BookPulse - Plataforma de Gestión de Reservas y Citas",
     bookingDesc: `Sistema completo de reserva de citas y gestión de horarios en tiempo real con pasarela de pagos y notificaciones automáticas.<br><br>
@@ -62,6 +63,14 @@ const translations = {
     Implementa un flujo de reserva completo con pagos en línea mediante **Stripe Checkout** y confirmaciones automáticas multicanal por correo electrónico (**Resend API**) y mensajería instantánea (**Twilio WhatsApp/SMS**).<br><br>
     Arquitectura Técnica: Diseñada bajo una estructura desacoplada con backend en Spring Boot sobre PostgreSQL securizado con **Spring Security y JWT**, panel de administración para gestión de servicios/horarios, y frontend SPA reactivo desarrollado con **React (Vite)** y **Tailwind CSS**, desplegado de forma independiente en Vercel y Render.`,
 
+    // --- PROYECTO: EUDI VERIFIER ---
+    verifierStatus: "En Desarrollo",
+    verifierTitle: "EUDI Verifier - SDK Identidad Digital & SSI",
+    verifierDesc: `Verificador de credenciales verificables (Verifiable Credentials / Attestations) integrado con el ecosistema de billeteras digitales europeas (EUDI Wallet - eIDAS2).<br><br>
+    Permite a aplicaciones y servicios autenticar usuarios y validar atributos personales o profesionales respetando la privacidad (Zero-Knowledge Proofs / Selective Disclosure) y sin intermediarios centralizados.<br><br>
+    Diseñado bajo arquitectura modular y extensible para integrarse mediante un SDK técnico, facilitando el intercambio seguro de datos de identidad en tiempo real.<br><br>
+    Arquitectura Técnica: Core backend desarrollado con Java y Spring Boot para la lógica cryptográfica, gestión de esquemas de credenciales y validación de firmas digitales. Integración de API REST documentada y probada con Postman, preparada para conectarse con cualquier cliente frontend.`,
+    
     skillsTitle: "Mis habilidades",
     closeModal: "✖",
     contactTitle: "Contacto" 
@@ -95,15 +104,16 @@ const translations = {
        
     projectsTitle: "Projects",
 
-    // --- PROJECT 1: ERP & TPV ---
-    erpStatus: "Verifactu System v1.0 Production · Active Development",
+    // --- PROJECT: ERP & TPV ---
+    featuredProject: "Featured Project",
+    erpStatus: "Production Ready",
     erpTitle: "ERP & TPV Smart Management (SaaS)",
     erpDesc: `Comprehensive multi-tenant business management system (SaaS) tailored to current AEAT legal regulations.<br><br>
     Ensures strict data isolation using a Multi-Tenant architecture, where business identity is securely extracted at the server level directly through JWT tokens.<br><br>
     Evolution to v2.0: Implements a unified "All-in-One" sales and workshop lifecycle, product family organization, a partial return system using corrective invoices (DEV-), cash auditing with Bizum support (openings, Z-reports), and data import/export to Excel/CSV.<br><br>
     Technical Architecture: Robust backend built with Spring Boot and Spring Data JPA over a PostgreSQL database, secured via JWT filters, interacting with a reactive Angular frontend optimized for touchscreens, tablets, and mobile devices, and designed to meet VeriFactu billing record-keeping requirements.`,
 
-    // --- PROJECT 2: ECOMMERCE ---
+    // --- PROJECT: ECOMMERCE ---
     ecommerceStatus: "Production Ready",
     ecommerceTitle: "DevShop - Fullstack Ecommerce",
     ecommerceDesc: `Robust e-commerce platform that simulates a real production environment. Implements secure authentication and high-availability data persistence.<br><br>
@@ -111,14 +121,14 @@ const translations = {
     Technical Architecture: Developed using a decoupled design. The frontend leverages the potential of Angular through modular architecture, route guards, HTTP interceptors, and efficient state management.<br><br>
     The backend is built on a solid REST API in Spring Boot, secured with JWT, and with optimized persistence in PostgreSQL via Spring Data JPA.`,
 
-    // --- PROJECT 3: TASKFLOW ---
+    // --- PROJECT: TASKFLOW ---
     taskflowStatus: "Production Ready",
     taskflowTitle: "TaskFlow - Fullstack Task Manager",
     taskflowDesc: `A complete application for managing tasks with authentication, subtasks, statuses, filters, and a Kanban board. <br><br>
     A realistic full-stack project designed to demonstrate professional architecture and best practices.<br><br>
     I designed and documented the REST API using Postman and secured the endpoints with JWT.`,
 
-    // --- PROJECT 4: BookPulse ---
+    // --- PROJECT: BookPulse ---
     bookingStatus: "Production Ready",
     bookingTitle: "BookPulse - Appointment & Booking Management Platform",
     bookingDesc: `Complete real-time appointment booking and scheduling management system with a payment gateway and automated notifications.<br><br>
@@ -126,6 +136,14 @@ const translations = {
     Implement a complete booking flow featuring online payments via **Stripe Checkout** and automated multi-channel confirmations via email (**Resend API**) and instant messaging (**Twilio WhatsApp/SMS**).<br><br>
     Technical Architecture: Designed with a decoupled structure featuring a Spring Boot backend on PostgreSQL secured with **Spring Security and JWT**, an administration panel for service and schedule management, and a reactive SPA frontend built with **React (Vite)** and **Tailwind CSS**, independently deployed on Vercel and Render.`,
 
+    // --- PROJECT: EUDI VERIFIER ---
+    verifierStatus: "In Development",
+    verifierTitle: "EUDI Verifier - Digital Identity & SSI SDK",
+    verifierDesc: `Verifiable Credentials (and Attestations) verifier integrated with the European Digital Identity Wallet ecosystem (EUDI Wallet - eIDAS2).<br><br>
+    Enables applications and services to authenticate users and validate personal or professional attributes while preserving privacy (Zero-Knowledge Proofs / Selective Disclosure) without centralized intermediaries.<br><br>
+    Designed under a modular and extensible architecture as a technical SDK, facilitating real-time secure identity data exchange.<br><br>
+    Technical Architecture: Core backend built with Java and Spring Boot handling cryptographic logic, credential schema management, and digital signature validation. REST API design documented and tested with Postman, ready for frontend integration.`,
+    
     skillsTitle: "My Skills",
     closeModal: "✖", 
     contactTitle: "Contact" 

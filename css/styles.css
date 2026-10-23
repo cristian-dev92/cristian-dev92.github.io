@@ -411,6 +411,52 @@ section {
 }
 
 /* ==========================================================================
+   BADGE DE PROYECTO DESTACADO (FEATURED)
+   ========================================================================== */
+.status-featured {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background: rgba(245, 158, 11, 0.15); /* Fondo ámbar/dorado muy sutil */
+  width: fit-content;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  color: #f59e0b; /* Color dorado/ámbar */
+}
+
+.status-featured i {
+  font-size: 0.85rem;
+  margin-right: 8px;
+}
+
+.status-text-featured {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card.card-featured {
+  border: 1px solid var(--morado);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.15); /* Un resplandor muy sutil y elegante */
+}
+
+/* Contenedor para mostrar badges juntos */
+.badges-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Quita el margin-bottom individual cuando están en el contenedor */
+.badges-container .status-featured,
+.badges-container .status-stable {
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
    BOTONES DE PROYECTOS
    ========================================================================== */
 .project-links {
